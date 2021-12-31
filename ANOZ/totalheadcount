@@ -1,0 +1,50 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class TotalHeadCount extends JFrame {
+//        JTextField tx1, tx2;
+        JLabel lb1, lb2, lb3;
+        JButton bt1;
+        JComboBox cb1,cb2;
+        TotalHeadCount(){
+
+//            setting components==========================================================
+
+
+
+            cb1 = new JComboBox();
+            cb1.setBounds(230,50,50,25);
+            add(cb1);
+
+            cb2 = new JComboBox();
+            cb2.setBounds(230,100,50,25);
+            add(cb2);
+
+            lb1 = new JLabel("Children");
+            lb1.setBounds(150,50,100,20);
+            add(lb1);
+
+            lb2 = new JLabel("Adult");
+            lb2.setBounds(150,100,100,20);
+            add(lb2);
+
+            bt1 = new JButton("Submit");
+            bt1.setBounds(200,200,75,30);
+            add(bt1);
+
+
+
+            setTitle("Total members in trip");
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            setLayout(null);
+            setVisible(true);
+//            setResizable(false);
+            getContentPane().setBackground(Color.CYAN);
+            setBounds(600,100,500,300);
+
+
+        }
+    public static void main(String[] args) {
+            TotalHeadCount total = new TotalHeadCount();
+    }
+}
