@@ -35,6 +35,8 @@ class MyFrame
     private JTextArea tout;
     private JLabel res;
     private JTextArea resadd;
+    private JLabel USer,pass,pass2;
+    private JTextField Username,password,password2;
  
     private String dates[]
         = { "1", "2", "3", "4", "5",
@@ -61,8 +63,8 @@ class MyFrame
     // with default values.
     public MyFrame()
     {
-        setTitle("Registration Form");
-        setBounds(300, 90, 900, 600);
+        setTitle("Register to GHU-MANTEY");
+        setBounds(300, 90, 900, 850);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
  
@@ -159,30 +161,71 @@ class MyFrame
         tadd.setLocation(200, 300);
         tadd.setLineWrap(true);
         c.add(tadd);
+
+        USer = new JLabel("User Name");
+        USer.setFont(new Font("Arial", Font.PLAIN, 20));
+        USer.setSize(250, 20);
+        USer.setLocation(100,400);
+        c.add(USer);
+
+        Username = new JTextField();
+        Username.setFont(new Font("Arial", Font.PLAIN, 15));
+        Username.setSize(200,25);
+        Username.setLocation(210,395);
+        c.add(Username);
+
+
+        pass = new JLabel("Password");
+        pass.setFont(new Font("Arial", Font.PLAIN, 20));
+        pass.setSize(250, 20);
+        pass.setLocation(100,450);
+        c.add(pass);
+
+        password = new JTextField();
+        password.setFont(new Font("Arial", Font.PLAIN, 15));
+        password.setSize(200,25);
+        password.setLocation(210,443);
+        c.add(password);
+
+        pass2 = new JLabel("Re-enter your Password");
+        pass2.setFont(new Font("Arial", Font.PLAIN, 20));
+        pass2.setSize(250, 20);
+        pass2.setLocation(100,500);
+        c.add(pass2);
+
+        password2 = new JTextField();
+        password2.setFont(new Font("Arial", Font.PLAIN, 15));
+        password2.setSize(200,25);
+        password2.setLocation(325,500);
+        c.add(password2);
+
+
+       
+        
  
         term = new JCheckBox("Accept Terms And Conditions.");
         term.setFont(new Font("Arial", Font.PLAIN, 15));
         term.setSize(250, 20);
-        term.setLocation(150, 400);
+        term.setLocation(150, 550);
         c.add(term);
  
         sub = new JButton("Submit");
         sub.setFont(new Font("Arial", Font.PLAIN, 15));
         sub.setSize(100, 20);
-        sub.setLocation(150, 450);
+        sub.setLocation(150, 600);
         sub.addActionListener(this);
         c.add(sub);
  
         reset = new JButton("Reset");
         reset.setFont(new Font("Arial", Font.PLAIN, 15));
         reset.setSize(100, 20);
-        reset.setLocation(270, 450);
+        reset.setLocation(290, 600);
         reset.addActionListener(this);
         c.add(reset);
  
         tout = new JTextArea();
         tout.setFont(new Font("Arial", Font.PLAIN, 15));
-        tout.setSize(300, 400);
+        tout.setSize(300, 350);
         tout.setLocation(500, 100);
         tout.setLineWrap(true);
         tout.setEditable(false);
@@ -191,7 +234,7 @@ class MyFrame
         res = new JLabel("");
         res.setFont(new Font("Arial", Font.PLAIN, 20));
         res.setSize(500, 25);
-        res.setLocation(100, 500);
+        res.setLocation(100, 700);
         c.add(res);
  
         resadd = new JTextArea();
@@ -210,36 +253,47 @@ class MyFrame
     public void actionPerformed(ActionEvent e)
     {
         if (e.getSource() == sub) {
-            if (term.isSelected()) {
-                String data1;
-                String data
-                    = "Name : "
-                      + tname.getText() + "\n"
-                      + "Mobile : "
-                      + tmno.getText() + "\n";
-                if (male.isSelected())
-                    data1 = "Gender : Male"
+            String passcheck1 = password.getText();
+            String passcheck2 = password2.getText();
+            if(passcheck1.equals(passcheck2)){
+                if (term.isSelected()) {
+                    String data1;
+                    String data
+                        = "Name : "
+                          + tname.getText() + "\n"
+                          + "Mobile : "
+                          + tmno.getText() + "\n"
+                          + "User name : "
+                          + Username.getText() + "\n";
+                    
+                    if (male.isSelected())
+                        data1 = "Gender : Male"
                             + "\n";
-                else
-                    data1 = "Gender : Female"
+                    else
+                        data1 = "Gender : Female"
                             + "\n";
-                String data2
-                    = "DOB : "
+                    String data2
+                        = "DOB : "
                       + (String)date.getSelectedItem()
                       + "/" + (String)month.getSelectedItem()
                       + "/" + (String)year.getSelectedItem()
                       + "\n";
  
-                String data3 = "Address : " + tadd.getText();
-                tout.setText(data + data1 + data2 + data3);
-                tout.setEditable(false);
-                res.setText("Registration Successfully..");
-            }
-            else {
+                    String data3 = "Address : " + tadd.getText();
+                    tout.setText(data + data1 + data2 + data3);
+                    tout.setEditable(false);
+                    res.setText("Registration Successfully");
+                }
+                else {
+                    tout.setText("");
+                    resadd.setText("");
+                    res.setText("Please accept the"
+                            + " terms & conditions");
+                }
+            }else{
                 tout.setText("");
-                resadd.setText("");
-                res.setText("Please accept the"
-                            + " terms & conditions..");
+            resadd.setText("");
+            res.setText("Passwords do not match");
             }
         }
  
@@ -250,6 +304,8 @@ class MyFrame
             tmno.setText(def);
             res.setText(def);
             tout.setText(def);
+            Username.setText(def);
+            password.setText(def);
             term.setSelected(false);
             date.setSelectedIndex(0);
             month.setSelectedIndex(0);
