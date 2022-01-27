@@ -5,5 +5,8 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/Users/duktartamang/Downloads/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar"
-    ]
+    ],
+    "java.completion.enabled": false,
+    "java.debug.settings.enableRunDebugCodeLens": false,
+    "java.test.editor.enableShortcuts": false
 }

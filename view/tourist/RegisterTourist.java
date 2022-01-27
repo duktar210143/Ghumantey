@@ -1,6 +1,7 @@
-package view;
+package view.tourist;
 
 import java.awt.event.*;
+
 import javax.swing.*;
 import javax.swing.JPasswordField;
 import java.awt.*;
@@ -8,12 +9,13 @@ import java.awt.*;
 import controller.TouristController;
 import model.Tourist;
 
+
 public class RegisterTourist
     extends JFrame
     implements ActionListener {
  
     // Components of the Form
-    private Container c;
+    private JFrame frame;
     private JLabel title;
     private JLabel name;
     private JTextField tname;
@@ -99,140 +101,154 @@ public class RegisterTourist
     public RegisterTourist()
     {
         setTitle("Register to GHU-MANTEY");
-        setBounds(300, 90, 900, 850);
+
+        frame = new JFrame();
+
+        frame.setLayout(null);
+        frame.setBounds(300, 90, 900, 850);
+        frame.setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setResizable(false);
- 
-        c = getContentPane();
-        c.setLayout(null);
- 
+        frame.setLocationRelativeTo(null);
+
+       
         title = new JLabel("Registration Form");
+        title.setForeground(Color.white);
         title.setFont(new Font("Arial", Font.PLAIN, 30));
         title.setSize(300, 30);
         title.setLocation(300, 30);
-        c.add(title);
+        frame.add(title);
  
         name = new JLabel("Name");
+        name.setForeground(Color.white);
         name.setFont(new Font("Arial", Font.PLAIN, 20));
         name.setSize(100, 20);
         name.setLocation(100, 100);
-        c.add(name);
+        frame.add(name);
  
         tname = new JTextField();
         tname.setFont(new Font("Arial", Font.PLAIN, 15));
         tname.setSize(190, 20);
         tname.setLocation(200, 100);
-        c.add(tname);
+        frame.add(tname);
  
         mno = new JLabel("Mobile");
+        mno.setForeground(Color.white);
         mno.setFont(new Font("Arial", Font.PLAIN, 20));
         mno.setSize(100, 20);
         mno.setLocation(100, 150);
-        c.add(mno);
+        frame.add(mno);
  
         tmno = new JTextField();
         tmno.setFont(new Font("Arial", Font.PLAIN, 15));
         tmno.setSize(150, 20);
         tmno.setLocation(200, 150);
-        c.add(tmno);
+        frame.add(tmno);
  
         gender = new JLabel("Gender");
+        gender.setForeground(Color.white);
         gender.setFont(new Font("Arial", Font.PLAIN, 20));
         gender.setSize(100, 20);
         gender.setLocation(100, 200);
-        c.add(gender);
+        frame.add(gender);
  
         male = new JRadioButton("Male");
+        male.setForeground(Color.white);
         male.setFont(new Font("Arial", Font.PLAIN, 15));
         male.setSelected(true);
         male.setSize(75, 20);
         male.setLocation(200, 200);
-        c.add(male);
+        frame.add(male);
  
         female = new JRadioButton("Female");
+        female.setForeground(Color.white);
         female.setFont(new Font("Arial", Font.PLAIN, 15));
         female.setSelected(false);
         female.setSize(80, 20);
         female.setLocation(275, 200);
-        c.add(female);
+        frame.add(female);
  
         gengp = new ButtonGroup();
         gengp.add(male);
         gengp.add(female);
  
         dob = new JLabel("DOB");
+        dob.setForeground(Color.white);
         dob.setFont(new Font("Arial", Font.PLAIN, 20));
         dob.setSize(100, 20);
         dob.setLocation(100, 250);
-        c.add(dob);
+        frame.add(dob);
  
         date = new JComboBox(dates);
         date.setFont(new Font("Arial", Font.PLAIN, 15));
         date.setSize(50, 20);
         date.setLocation(200, 250);
-        c.add(date);
+        frame.add(date);
  
         month = new JComboBox(months);
         month.setFont(new Font("Arial", Font.PLAIN, 15));
         month.setSize(60, 20);
         month.setLocation(250, 250);
-        c.add(month);
+        frame.add(month);
  
         year = new JComboBox(years);
         year.setFont(new Font("Arial", Font.PLAIN, 15));
         year.setSize(60, 20);
         year.setLocation(320, 250);
-        c.add(year);
+        frame.add(year);
  
         add = new JLabel("Address");
+        add.setForeground(Color.white);
         add.setFont(new Font("Arial", Font.PLAIN, 20));
         add.setSize(100, 20);
         add.setLocation(100, 300);
-        c.add(add);
+        frame.add(add);
  
         tadd = new JTextArea();
         tadd.setFont(new Font("Arial", Font.PLAIN, 15));
         tadd.setSize(200, 75);
         tadd.setLocation(200, 300);
         tadd.setLineWrap(true);
-        c.add(tadd);
+        frame.add(tadd);
 
         USer = new JLabel("User Name");
+        USer.setForeground(Color.white);
         USer.setFont(new Font("Arial", Font.PLAIN, 20));
         USer.setSize(250, 20);
         USer.setLocation(100,400);
-        c.add(USer);
+        frame.add(USer);
 
         Username = new JTextField();
         Username.setFont(new Font("Arial", Font.PLAIN, 15));
         Username.setSize(200,25);
         Username.setLocation(210,395);
-        c.add(Username);
+        frame.add(Username);
 
 
         pass = new JLabel("Password");
+        pass.setForeground(Color.white);
         pass.setFont(new Font("Arial", Font.PLAIN, 20));
         pass.setSize(250, 20);
         pass.setLocation(100,450);
-        c.add(pass);
+        frame.add(pass);
 
         password = new JPasswordField();
         password.setFont(new Font("Arial", Font.PLAIN, 15));
         password.setSize(200,25);
         password.setLocation(210,443);
-        c.add(password);
+        frame.add(password);
 
         pass2 = new JLabel("Re-enter your Password");
+        pass2.setForeground(Color.white);
         pass2.setFont(new Font("Arial", Font.PLAIN, 20));
         pass2.setSize(250, 20);
         pass2.setLocation(100,500);
-        c.add(pass2);
+        frame.add(pass2);
 
         password2 = new JPasswordField();
         password2.setFont(new Font("Arial", Font.PLAIN, 15));
         password2.setSize(200,25);
         password2.setLocation(325,500);
-        c.add(password2);
+        frame.add(password2);
 
 
        
@@ -242,21 +258,23 @@ public class RegisterTourist
         term.setFont(new Font("Arial", Font.PLAIN, 15));
         term.setSize(250, 20);
         term.setLocation(150, 550);
-        c.add(term);
+        frame.add(term);
+
+        
  
         sub = new JButton("Submit");
         sub.setFont(new Font("Arial", Font.PLAIN, 15));
         sub.setSize(100, 20);
         sub.setLocation(150, 600);
         sub.addActionListener(this);
-        c.add(sub);
+        frame.add(sub);
  
         reset = new JButton("Reset");
         reset.setFont(new Font("Arial", Font.PLAIN, 15));
         reset.setSize(100, 20);
         reset.setLocation(290, 600);
         reset.addActionListener(this);
-        c.add(reset);
+        frame.add(reset);
  
         tout = new JTextArea();
         tout.setFont(new Font("Arial", Font.PLAIN, 15));
@@ -264,22 +282,53 @@ public class RegisterTourist
         tout.setLocation(500, 100);
         tout.setLineWrap(true);
         tout.setEditable(false);
-        c.add(tout);
+        frame.add(tout);
  
         res = new JLabel("");
         res.setFont(new Font("Arial", Font.PLAIN, 20));
         res.setSize(500, 25);
         res.setLocation(100, 700);
-        c.add(res);
+        frame.add(res);
  
         resadd = new JTextArea();
         resadd.setFont(new Font("Arial", Font.PLAIN, 15));
         resadd.setSize(200, 75);
         resadd.setLocation(580, 175);
         resadd.setLineWrap(true);
-        c.add(resadd);
+
+        JLabel Icon = new JLabel();
+        Icon.setIcon(new ImageIcon("Photos/nepal-village.jpg"));
+        Icon.setBounds(0,0, 900, 850);
+        frame.add(Icon);
+        
+        frame.add(resadd);
  
-        setVisible(true);
+        frame.setVisible(true);
+    }
+    public boolean checkfield(){
+        boolean flag = false;
+        if(tname.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "name cannot be empty");
+            tname.requestFocus();
+            return true;
+            
+        }else if(tmno.getText().equals("")){
+             JOptionPane.showMessageDialog(null, "mobile number cannot be null");
+             tmno.requestFocus();
+             return true;
+
+        }else if(Username.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "username cannot be empty");
+            Username.requestFocus();
+            return true;
+
+        }else if(password.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "password cannot be empty");
+            password.requestFocus();
+            return true;
+            
+        }
+        return flag;
     }
  
     // method actionPerformed()
@@ -288,6 +337,7 @@ public class RegisterTourist
     public void actionPerformed(ActionEvent e)
     {
         if (e.getSource() == sub) {
+            if(!checkfield()){
                                     
             String passcheck1 = password.getText();
             String passcheck2 = password2.getText();
@@ -327,11 +377,15 @@ public class RegisterTourist
                     resadd.setText("");
                     res.setText("Please accept the"
                             + " terms & conditions");
+                    res.setForeground(Color.white);
                 }
             }else{
                 tout.setText("");
             resadd.setText("");
             res.setText("Passwords  not match");
+            res.setForeground(Color.white);
+            res.setBackground(Color.BLACK);
+
             }
         }
  
@@ -351,6 +405,7 @@ public class RegisterTourist
             resadd.setText(def);
         }
     }
+    }
 }
  
 // Driver Code
@@ -358,7 +413,8 @@ public class RegisterTourist
  
 //     public static void main(String[] args) throws Exception
 //     {
-//         RegisterTourist f = new RegisterTourist();
+    
+//          new RegisterTourist();
 //     }
 // }
 

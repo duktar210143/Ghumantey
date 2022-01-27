@@ -6,6 +6,111 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StaysDashBoard",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.StaysDashBoard",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch TouristDashBoard",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.TouristDashBoard",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch RegisterStays",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.RegisterStays",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hotelcheckins",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.Hotelcheckins",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stays",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.Stays",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stays",
+            "request": "launch",
+            "mainClass": "view.touristDashborad.Stays",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch touristDashPic",
+            "request": "launch",
+            "mainClass": "Photos.touristDashPic",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch About",
+            "request": "launch",
+            "mainClass": "Photos.Icons.About",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch TouristDashBoard",
+            "request": "launch",
+            "mainClass": "view.tourist.TouristDashBoard",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Admin1",
+            "request": "launch",
+            "mainClass": "view.Admin.Admin1",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Login1",
+            "request": "launch",
+            "mainClass": "Photos.Login1",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ImageBackground$1",
+            "request": "launch",
+            "mainClass": "Photos.ImageBackground$1",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch ImageBackground",
+            "request": "launch",
+            "mainClass": "Photos.ImageBackground",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registration",
+            "request": "launch",
+            "mainClass": "view.Registration",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch BackgroundPanel",
+            "request": "launch",
+            "mainClass": "Photos.BackgroundPanel",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch Login",
             "request": "launch",
             "mainClass": "view.Login",

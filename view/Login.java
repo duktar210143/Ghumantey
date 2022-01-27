@@ -1,7 +1,10 @@
 package view;
 
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 import java.awt.event.*;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,18 +14,20 @@ import javax.swing.JTextField;
 
 import controller.TouristController;
 import model.Tourist;
-import view.tourist.Dashboard;
+import view.tourist.RegisterTourist;
+import view.touristDashboard.TouristDashBoard;
+
 
 public class Login {
   public Login(){
-    JFrame frame = new JFrame("Login Page");
-      frame.setSize(300,150);
+    JFrame frame = new JFrame("LOGIN TO GHUMANTEY ");
+      frame.setBounds(400,400,350,450);
       frame.setLayout(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       frame.setLocationRelativeTo(null);
-
       JLabel lblUsername = new JLabel("Username");
       JLabel lblPassword = new JLabel("Password");
+
 
       frame.add(lblUsername);
       frame.add(lblPassword);
@@ -39,26 +44,23 @@ public class Login {
       frame.add(btnLogin);
       frame.add(btnRegister);
 
-      lblUsername.setBounds(20,10,80,25);
-      lblPassword.setBounds(20,40,80,25);
+      lblUsername.setBounds(20,50,80,25);
+      lblUsername.setForeground(Color.white);
+      lblPassword.setBounds(20,110,80,25);
+      lblPassword.setForeground(Color.white);
 
-      txtUsername.setBounds(100,10,160,25);
-      txtPassword.setBounds(100,40,160,25);
+      txtUsername.setBounds(100,50,160,25);
+      txtPassword.setBounds(100,110,160,25);
 
-      btnLogin.setBounds(30,80,100,25);
-      btnRegister.setBounds(140,80,100,25);
+      btnLogin.setBounds(30,180,100,25);
+      btnRegister.setBounds(140,180,100,25);
 
-      frame.setVisible(true);
+      JLabel Icon = new JLabel();
+      Icon.setIcon(new ImageIcon("Photos/Screen Shot 2022-01-23 at 22.15.13.png"));
+      Icon.setBounds(0,0,350,450);
+      frame.add(Icon);
 
-      btnRegister.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-          
-          new RegisterTourist();
-          
-        }
-      });
-  
+      // frame.setVisible(true);
       btnLogin.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -66,7 +68,7 @@ public class Login {
             TouristController controller = new TouristController();
             Tourist tourist = controller.loginTourist(txtUsername.getText(),txtPassword.getText());
             if(tourist!=null){
-              new Dashboard();
+              new TouristDashBoard().setVisible(true);;
             }else{
               JOptionPane.showMessageDialog(null, "invalid Username or Password");
             
@@ -74,6 +76,31 @@ public class Login {
         }
           
     });
+
+      btnRegister.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+          new RegisterTourist();          
+        }
+    });
+
+      frame.setVisible(true);
+  
+    //   btnLogin.addActionListener(new ActionListener() {
+    //     @Override
+    //     public void actionPerformed(ActionEvent e) {
+          
+    //         TouristController controller = new TouristController();
+    //         Tourist tourist = controller.loginTourist(txtUsername.getText(),txtPassword.getText());
+    //         if(tourist!=null){
+    //           new TouristDashBoard().setVisible(true);;
+    //         }else{
+    //           JOptionPane.showMessageDialog(null, "invalid Username or Password");
+            
+    //       }
+    //     }
+          
+    // });
   }
     public static void main(String[] args) {
 
