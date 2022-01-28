@@ -6,7 +6,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
+
 import java.awt.event.*;
+import java.awt.*;
 
 import model.Stays;
 import model.Tourist;
@@ -51,12 +54,14 @@ implements ActionListener {
             lb2.setBounds(330,10,180,30);
             add(lb2);
 
-            lb3 = new JLabel("From");
+            lb3 = new JLabel("Arrival");
+            lb3.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
             lb3.setBounds(50, 120, 100, 30);
             add(lb3);
 
             
-            lb4 = new JLabel("To");
+            lb4 = new JLabel("Departure");
+            lb4.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
             lb4.setBounds(330, 120, 100, 30);
             add(lb4);
 
@@ -76,19 +81,19 @@ implements ActionListener {
             
 
              cb1 = new JComboBox<>(months);
-             cb1.setBounds(150, 100, 60, 50);
+             cb1.setBounds(110, 100, 90, 130);
              add(cb1);
 
              cb2 = new JComboBox<>(date);
-             cb2.setBounds(230, 100, 50, 50);
+             cb2.setBounds(200, 100, 90, 130);
              add(cb2);
 
              cb3 = new JComboBox<>(months);
-             cb3.setBounds(420,100,60,50);
+             cb3.setBounds(420,100,90,130);
              add(cb3);
              
              cb4 = new JComboBox<>(date);
-             cb4.setBounds(500, 100, 50, 50);
+             cb4.setBounds(500, 100, 90, 130);
              add(cb4);
 // FOR submit button=========================================================================================================================
              bt1 = new JButton("Submit");
@@ -99,7 +104,8 @@ implements ActionListener {
 
 
             setTitle("Stays");
-            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            // setDefaultCloseOperation(EXIT_ON_CLOSE);
+            setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
             setBounds(400,150,700,300);
             setLayout(null);
             //setResizable(false);

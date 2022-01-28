@@ -5,6 +5,11 @@
 package view.touristDashboard;
 
 import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.text.StyledEditorKit.BoldAction;
 
 /**
  *
@@ -35,10 +40,8 @@ public class StaysDashBoard extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         KathmanduIcon = new javax.swing.JLabel();
         pokharaIcon = new javax.swing.JLabel();
-        chitwanIcon = new javax.swing.JLabel();
         location = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -51,27 +54,18 @@ public class StaysDashBoard extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         pokharaprice = new javax.swing.JButton();
         details1 = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        details2 = new javax.swing.JButton();
-        chitwanPrice = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        Icon = new javax.swing.JLabel();
         Book = new javax.swing.JButton();
         Book1 = new javax.swing.JButton();
-        Book2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(2560,1600);
@@ -90,15 +84,17 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(450, 50, 139, 35);
 
-        kathmandu.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        kathmandu.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        kathmandu.setForeground(Color.WHITE); // NOI18N
         kathmandu.setText("Kathmandu Guest House");
         getContentPane().add(kathmandu);
-        kathmandu.setBounds(410, 120, 200, 33);
+        kathmandu.setBounds(410, 120, 230, 33);
 
-        pokhara.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        pokhara.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        pokhara.setForeground(Color.WHITE); // NOI18N
         pokhara.setText("Pokahra Guest House");
         getContentPane().add(pokhara);
-        pokhara.setBounds(430, 350, 181, 33);
+        pokhara.setBounds(430, 350, 200, 33);
 
         Logo.setText("Logo");
         getContentPane().add(Logo);
@@ -108,10 +104,6 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(52, 240, 0, 0);
 
-        jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        jLabel7.setText("chitwan Guest House");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(410, 620, 159, 17);
 
         KathmanduIcon.setText("KathmanduIcon");
         getContentPane().add(KathmanduIcon);
@@ -121,25 +113,30 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().add(pokharaIcon);
         pokharaIcon.setBounds(850, 420, 77, 16);
 
-        chitwanIcon.setText("ChitwanIcon");
-        getContentPane().add(chitwanIcon);
-        chitwanIcon.setBounds(850, 660, 78, 16);
 
         location.setText("Location");
+        location.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        location.setForeground(Color.white);
         getContentPane().add(location);
-        location.setBounds(340, 180, 54, 16);
+        location.setBounds(340, 180, 120, 16);
 
         jLabel4.setText("Kathmandu/thamel/23rdstreet");
+        jLabel4.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel4.setForeground(Color.WHITE);
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(490, 180, 193, 16);
+        jLabel4.setBounds(490, 180, 280, 16);
 
         jLabel8.setText("Contacts");
+        jLabel8.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel8.setForeground(Color.white);
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(340, 230, 56, 16);
+        jLabel8.setBounds(340, 230, 90, 16);
 
         jLabel9.setText("9856472648");
+        jLabel9.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel9.setForeground(Color.white);
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(490, 230, 80, 16);
+        jLabel9.setBounds(490, 230, 130, 16);
 
         kathmanduprice.setText("Price");
         kathmanduprice.addActionListener(new java.awt.event.ActionListener() {
@@ -160,20 +157,28 @@ public class StaysDashBoard extends javax.swing.JFrame {
         details.setBounds(490, 290, 88, 29);
 
         jLabel3.setText("Location");
+        jLabel3.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel3.setForeground(Color.white);
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(350, 420, 54, 16);
+        jLabel3.setBounds(350, 420, 80, 16);
 
         jLabel10.setText("Pokhara/chinaTown/12thStreet");
+        jLabel10.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel10.setForeground(Color.white);
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(490, 420, 197, 16);
+        jLabel10.setBounds(490, 420, 270, 16);
 
         jLabel11.setText("Contacts");
+        jLabel11.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel11.setForeground(Color.white);
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(350, 480, 56, 16);
+        jLabel11.setBounds(350, 480, 80, 16);
 
         jLabel12.setText("9864527453");
+        jLabel12.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel12.setForeground(Color.white);
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(500, 480, 80, 16);
+        jLabel12.setBounds(500, 480, 130, 16);
 
         pokharaprice.setText("Price");
         pokharaprice.addActionListener(new java.awt.event.ActionListener() {
@@ -193,82 +198,61 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().add(details1);
         details1.setBounds(490, 550, 88, 29);
 
-        jLabel13.setText("Location");
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(370, 660, 54, 16);
-
-        jLabel14.setText("Chitwan/Tharutole/2ndStreet");
-        getContentPane().add(jLabel14);
-        jLabel14.setBounds(520, 660, 185, 16);
-
-        jLabel15.setText("Contacts");
-        getContentPane().add(jLabel15);
-        jLabel15.setBounds(370, 720, 56, 16);
-
-        jLabel16.setText("9746372564");
-        getContentPane().add(jLabel16);
-        jLabel16.setBounds(530, 720, 80, 16);
-
-        details2.setText("Details");
-        details2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                details2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(details2);
-        details2.setBounds(520, 770, 88, 29);
-
-        chitwanPrice.setText("Price");
-        getContentPane().add(chitwanPrice);
-        chitwanPrice.setBounds(360, 770, 75, 29);
 
         jLabel17.setText("Name");
+        jLabel17.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel17.setForeground(Color.white);
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(20, 420, 36, 16);
+        jLabel17.setBounds(20, 420, 60, 16);
 
         jLabel18.setText("Pokhara Guest House");
+        jLabel18.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel18.setForeground(Color.white);
         getContentPane().add(jLabel18);
-        jLabel18.setBounds(140, 420, 150, 16);
+        jLabel18.setBounds(120, 420, 200, 16);
 
         jLabel19.setText("Gmail");
+        jLabel19.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel19.setForeground(Color.white);
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(20, 480, 53, 16);
+        jLabel19.setBounds(20, 480, 80, 16);
 
         jLabel20.setText("PokharaguestH@gmail.com");
+        jLabel20.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
+        jLabel20.setForeground(Color.white);
         getContentPane().add(jLabel20);
-        jLabel20.setBounds(140, 480, 172, 16);
+        jLabel20.setBounds(120, 480, 190, 16);
 
         jLabel21.setText("Name");
         getContentPane().add(jLabel21);
         jLabel21.setBounds(10, 680, 36, 16);
 
-        jLabel22.setText("Chitwan Guest House");
-        getContentPane().add(jLabel22);
-        jLabel22.setBounds(150, 660, 150, 16);
-
-        jLabel23.setText("Gmail");
-        getContentPane().add(jLabel23);
-        jLabel23.setBounds(10, 730, 36, 16);
-
-        jLabel24.setText("ChitwanG@gmail.com");
-        getContentPane().add(jLabel24);
-        jLabel24.setBounds(150, 720, 150, 16);
+       
 
         jLabel25.setText("Name");
+        jLabel25.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel25.setForeground(Color.white);
         getContentPane().add(jLabel25);
-        jLabel25.setBounds(30, 180, 40, 20);
+        jLabel25.setBounds(30, 180, 80, 20);
 
         jLabel26.setText("Kathmandu Guest House");
+        jLabel26.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
+        jLabel26.setForeground(Color.white);
         getContentPane().add(jLabel26);
-        jLabel26.setBounds(140, 180, 180, 20);
+        jLabel26.setBounds(120, 180, 250, 20);
 
         jLabel27.setText("Gmail");
+        jLabel27.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
+        jLabel27.setForeground(Color.white);
         getContentPane().add(jLabel27);
-        jLabel27.setBounds(30, 230, 36, 16);
+        jLabel27.setBounds(30, 230, 60, 16);
 
-        jLabel28.setText("Kathmandu");
+        jLabel28.setText("Kathmandu@gmail.com");
+        jLabel28.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
+        jLabel28.setForeground(Color.white);
         getContentPane().add(jLabel28);
-        jLabel28.setBounds(160, 230, 90, 16);
+        jLabel28.setBounds(130, 230, 200, 16);
+
 
         Book.setText("Book");
         Book.addActionListener(new java.awt.event.ActionListener() {
@@ -288,9 +272,13 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().add(Book1);
         Book1.setBounds(1160, 550, 70, 30);
 
-        Book2.setText("Book");
-        getContentPane().add(Book2);
-        Book2.setBounds(1160, 760, 70, 30);
+       
+        
+        Icon.setIcon(new ImageIcon("Photos/Screen Shot 2022-01-28 at 07.40.05.png"));
+        Icon.setSize(1450,800);
+        getContentPane().add(Icon);
+ 
+
 
     }// </editor-fold>                        
 
@@ -316,15 +304,24 @@ public class StaysDashBoard extends javax.swing.JFrame {
 
     private void BookActionPerformed(java.awt.event.ActionEvent evt) {                                     
         // TODO add your handling code here:
+        new RegisterStays();
+        
+
     }                                    
 
     private void Book1ActionPerformed(java.awt.event.ActionEvent evt) {                                      
         // TODO add your handling code here:
+        new RegisterStays().setVisible(true);
+    } 
+    private void Book2ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        new RegisterStays().setVisible(true);
     }                                     
+                                    
 
     /**
      * @param args the command line arguments
-     */
+    //  */
     // public static void main(String args[]) {
     //     /* Set the Nimbus look and feel */
     //     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -360,31 +357,20 @@ public class StaysDashBoard extends javax.swing.JFrame {
     // Variables declaration - do not modify                     
     private javax.swing.JButton Book;
     private javax.swing.JButton Book1;
-    private javax.swing.JButton Book2;
     private javax.swing.JLabel KathmanduIcon;
     private javax.swing.JLabel Logo;
-    private javax.swing.JLabel chitwanIcon;
-    private javax.swing.JButton chitwanPrice;
     private javax.swing.JButton details;
     private javax.swing.JButton details1;
-    private javax.swing.JButton details2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -393,7 +379,6 @@ public class StaysDashBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel kathmandu;
@@ -402,5 +387,6 @@ public class StaysDashBoard extends javax.swing.JFrame {
     private javax.swing.JLabel pokhara;
     private javax.swing.JLabel pokharaIcon;
     private javax.swing.JButton pokharaprice;
+    private javax.swing.JLabel Icon;
     // End of variables declaration                   
 }
