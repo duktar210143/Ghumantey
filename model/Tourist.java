@@ -24,6 +24,7 @@ public Tourist(String TourName,String Tourmobile, char TourGender,String TourDOB
 
 public Tourist(){
 
+
 }
 
 

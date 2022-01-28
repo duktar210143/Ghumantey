@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RegisterTouristTest",
+            "request": "launch",
+            "mainClass": "Test.RegisterTouristTest",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch StaysDashBoard",
             "request": "launch",
             "mainClass": "view.touristDashboard.StaysDashBoard",
