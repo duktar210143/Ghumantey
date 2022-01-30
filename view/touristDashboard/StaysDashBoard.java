@@ -67,8 +67,8 @@ public class StaysDashBoard extends javax.swing.JFrame {
         Book = new javax.swing.JButton();
         Book1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setSize(2560,1600);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBounds(300,100,2560,1600);
         getContentPane().setLayout(null);
         setBackground(Color.black);
 
@@ -274,8 +274,8 @@ public class StaysDashBoard extends javax.swing.JFrame {
 
        
         
-        Icon.setIcon(new ImageIcon("Photos/Screen Shot 2022-01-28 at 07.40.05.png"));
-        Icon.setSize(1450,800);
+        Icon.setIcon(new ImageIcon("Photos/stay3.png"));
+        Icon.setBounds(-150,-200,1600,1200);
         getContentPane().add(Icon);
  
 
@@ -304,7 +304,7 @@ public class StaysDashBoard extends javax.swing.JFrame {
 
     private void BookActionPerformed(java.awt.event.ActionEvent evt) {                                     
         // TODO add your handling code here:
-        new RegisterStays();
+        new RegisterStays().setVisible(true);;
         
 
     }                                    

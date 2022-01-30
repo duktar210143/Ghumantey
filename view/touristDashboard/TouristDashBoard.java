@@ -54,19 +54,9 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         Gmail = new javax.swing.JLabel();
-        Linkedincion = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        fantasyIcon = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        PodcastIcon = new javax.swing.JLabel();
-        facebookIcon = new javax.swing.JLabel();
-        spotifycon = new javax.swing.JLabel();
-        Instagramicon = new javax.swing.JLabel();
-        newsicon = new javax.swing.JLabel();
-        GoogleIcon = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        Netflixicon = new javax.swing.JLabel();
         Tmenu = new javax.swing.JMenuBar();
         Tview = new javax.swing.JMenu();
         aboutus = new javax.swing.JMenuItem();
@@ -92,88 +82,14 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
 
         jMenu7.setText("jMenu7");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         
         setResizable(false);
         getContentPane().setLayout(null);
-        setBounds(100,100,1250,840);
+        setBounds(300,100,1480,1600);
     
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel1.setText("Gmail");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(9, 490, 60, 17);
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel2.setText("facebook");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(8, 556, 70, 20);
-
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel3.setText("Linkedin");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(180, 490, 70, 20);
-
-        jLabel4.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel4.setText("Instagram");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(170, 550, 80, 20);
-
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel5.setText("Fantasy");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(368, 490, 70, 17);
-
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel6.setText("news");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(380, 560, 60, 20);
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(410, 420, 0, 0);
-
-        jLabel8.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel8.setText("google");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(603, 559, 60, 17);
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(410, 420, 0, 0);
-        getContentPane().add(Gmail);
-        Gmail.setBounds(90, 490, 70, 0);
-        getContentPane().add(Linkedincion);
-        Linkedincion.setBounds(280, 490, 0, 0);
-
-        jLabel10.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel10.setText("Podcast");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(590, 490, 70, 20);
-        getContentPane().add(fantasyIcon);
-        fantasyIcon.setBounds(470, 490, 0, 0);
-
-        jLabel11.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel11.setText("Spotify");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(812, 489, 51, 17);
-        getContentPane().add(PodcastIcon);
-        PodcastIcon.setBounds(690, 490, 0, 0);
-        getContentPane().add(facebookIcon);
-        facebookIcon.setBounds(100, 560, 0, 0);
-        getContentPane().add(spotifycon);
-        spotifycon.setBounds(910, 490, 0, 0);
-        getContentPane().add(Instagramicon);
-        Instagramicon.setBounds(290, 560, 0, 0);
-        getContentPane().add(newsicon);
-        newsicon.setBounds(470, 560, 0, 0);
-        getContentPane().add(GoogleIcon);
-        GoogleIcon.setBounds(700, 560, 0, 0);
-
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel12.setText("Netflix");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(813, 559, 70, 17);
-        getContentPane().add(jLabel14);
-        jLabel14.setBounds(910, 490, 0, 0);
-        getContentPane().add(Netflixicon);
-        Netflixicon.setBounds(900, 560, 0, 0);
 
         Tview.setText("View                       ");
         Tview.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
@@ -251,8 +167,8 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
         Tmenu.getAccessibleContext().setAccessibleName("Tmenubar");
 
         
-        icon.setIcon(new ImageIcon("Photos/Screen Shot 2022-01-25 at 12.00.19.png"));
-        icon.setBounds(0,0,1430,840);
+        icon.setIcon(new ImageIcon("Photos/Untitled design.png"));
+        icon.setBounds(-200,-250,1650,1400);
         getContentPane().add(icon);
 
     }// </editor-fold>     
@@ -270,53 +186,46 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
     /**
     //  * @param args the command line arguments
     //  */
-    // public static void main(String args[]) {
-    //     /* Set the Nimbus look and feel */
-    //     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-    //     /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-    //      * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-    //      */
-    //     try {
-    //         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-    //             if ("Nimbus".equals(info.getName())) {
-    //                 javax.swing.UIManager.setLookAndFeel(info.getClassName());
-    //                 break;
-    //             }
-    //         }
-    //     } catch (ClassNotFoundException ex) {
-    //         java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (InstantiationException ex) {
-    //         java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (IllegalAccessException ex) {
-    //         java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-    //         java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     }
-    //     //</editor-fold>
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(TouristDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
-    //     /* Create and display the form */
-    //     java.awt.EventQueue.invokeLater(new Runnable() {
-    //         public void run() {
-    //             new TouristDashBoard().setVisible(true);
-    //         }
-    //     });
-    // }
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TouristDashBoard().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify   
     private javax.swing.JLabel icon;                  
     private javax.swing.JMenu Bus;
     private javax.swing.JMenu Cars;
     private javax.swing.JLabel Gmail;
-    private javax.swing.JLabel GoogleIcon;
-    private javax.swing.JLabel Instagramicon;
-    private javax.swing.JLabel Linkedincion;
-    private javax.swing.JLabel Netflixicon;
-    private javax.swing.JLabel PodcastIcon;
     private javax.swing.JMenuBar Tmenu;
     private javax.swing.JMenu Tview;
     private javax.swing.JMenuItem aboutus;
-    private javax.swing.JLabel facebookIcon;
-    private javax.swing.JLabel fantasyIcon;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -340,8 +249,6 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JLabel newsicon;
-    private javax.swing.JLabel spotifycon;
     private javax.swing.JMenuItem yourbookings;
     // End of variables declaration                   
     @Override

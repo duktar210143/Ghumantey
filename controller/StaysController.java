@@ -7,8 +7,13 @@ public class StaysController {
     public int registerStays(Stays stay){
         String query;
 
-        query = "insert into Stays(TotalnumberofAdults,TotalnumberofChildren,ArrivalDate,DepartureDate)Values ("+stay.getTotalnumberofAdults()+","
-        +stay.getTotalnumberofChildren()+",'"
+        query = "insert into Stays(Name,Mail,Gender,Pass,TotalnumberofAdults,TotalnumberofChildren,ArrivalDate,DepartureDate)Values ('"
+        +stay.getName()+"','"
+        +stay.getMail()+"','"
+        +stay.getGender()+"','"
+        +stay.getPass()+"','"
+        +stay.getTotalnumberofAdults()+"','"
+        +stay.getTotalnumberofChildren()+"','"
         +stay.getArrivalDate()+"','"
         +stay.getDepartureDate()+"')";
 
