@@ -1,15 +1,11 @@
+package view.touristDashboard;
+
+import javax.swing.ImageIcon;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package view.touristDashboard;
-
-import java.awt.Color;
-import java.awt.Font;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.text.StyledEditorKit.BoldAction;
 
 /**
  *
@@ -18,7 +14,7 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 public class StaysDashBoard extends javax.swing.JFrame {
 
     /**
-     * Creates new form Stays
+     * Creates new form StaysDashBoard
      */
     public StaysDashBoard() {
         initComponents();
@@ -33,295 +29,49 @@ public class StaysDashBoard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        kathmandu = new javax.swing.JLabel();
-        pokhara = new javax.swing.JLabel();
-        Logo = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        KathmanduIcon = new javax.swing.JLabel();
-        pokharaIcon = new javax.swing.JLabel();
-        location = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        kathmanduprice = new javax.swing.JButton();
-        details = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        pokharaprice = new javax.swing.JButton();
-        details1 = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
+        Detailsbtn = new javax.swing.JButton();
+        pricebtn = new javax.swing.JButton();
+        Details2btn = new javax.swing.JButton();
+        price2btn = new javax.swing.JButton();
         Icon = new javax.swing.JLabel();
-        Book = new javax.swing.JButton();
-        Book1 = new javax.swing.JButton();
 
+        setSize(2560,1600);
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setBounds(300,100,2560,1600);
         getContentPane().setLayout(null);
-        setBackground(Color.black);
 
-        jLabel1.setFont(new java.awt.Font("Optima", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 153, 51));
-        jLabel1.setText("GHU-MANTEY");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 161, 64);
+        Detailsbtn.setText("Details");
+        getContentPane().add(Detailsbtn);
+        Detailsbtn.setBounds(20, 620, 75, 29);
 
-        jLabel2.setFont(new java.awt.Font("Menlo", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel2.setText("Available Hotels");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(450, 50, 139, 35);
-
-        kathmandu.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        kathmandu.setForeground(Color.WHITE); // NOI18N
-        kathmandu.setText("Kathmandu Guest House");
-        getContentPane().add(kathmandu);
-        kathmandu.setBounds(410, 120, 230, 33);
-
-        pokhara.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        pokhara.setForeground(Color.WHITE); // NOI18N
-        pokhara.setText("Pokahra Guest House");
-        getContentPane().add(pokhara);
-        pokhara.setBounds(430, 350, 200, 33);
-
-        Logo.setText("Logo");
-        getContentPane().add(Logo);
-        Logo.setBounds(210, 30, 31, 16);
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(40, 234, 0, 0);
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(52, 240, 0, 0);
-
-
-        KathmanduIcon.setText("KathmanduIcon");
-        getContentPane().add(KathmanduIcon);
-        KathmanduIcon.setBounds(820, 160, 98, 59);
-
-        pokharaIcon.setText("PokharaIcon");
-        getContentPane().add(pokharaIcon);
-        pokharaIcon.setBounds(850, 420, 77, 16);
-
-
-        location.setText("Location");
-        location.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        location.setForeground(Color.white);
-        getContentPane().add(location);
-        location.setBounds(340, 180, 120, 16);
-
-        jLabel4.setText("Kathmandu/thamel/23rdstreet");
-        jLabel4.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel4.setForeground(Color.WHITE);
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(490, 180, 280, 16);
-
-        jLabel8.setText("Contacts");
-        jLabel8.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel8.setForeground(Color.white);
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(340, 230, 90, 16);
-
-        jLabel9.setText("9856472648");
-        jLabel9.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel9.setForeground(Color.white);
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(490, 230, 130, 16);
-
-        kathmanduprice.setText("Price");
-        kathmanduprice.addActionListener(new java.awt.event.ActionListener() {
+        pricebtn.setText("Price");
+        pricebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kathmandupriceActionPerformed(evt);
+                pricebtnActionPerformed(evt);
             }
         });
-        getContentPane().add(kathmanduprice);
-        kathmanduprice.setBounds(330, 290, 75, 29);
+        getContentPane().add(pricebtn);
+        pricebtn.setBounds(120, 620, 75, 29);
 
-        details.setText("Details");
-        details.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                detailsActionPerformed(evt);
-            }
-        });
-        getContentPane().add(details);
-        details.setBounds(490, 290, 88, 29);
+        Details2btn.setText("Details");
+        getContentPane().add(Details2btn);
+        Details2btn.setBounds(720,620, 75, 29);
 
-        jLabel3.setText("Location");
-        jLabel3.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel3.setForeground(Color.white);
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(350, 420, 80, 16);
+        price2btn.setText("Price");
+        getContentPane().add(price2btn);
+        price2btn.setBounds(820,620, 75, 29);
 
-        jLabel10.setText("Pokhara/chinaTown/12thStreet");
-        jLabel10.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel10.setForeground(Color.white);
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(490, 420, 270, 16);
-
-        jLabel11.setText("Contacts");
-        jLabel11.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel11.setForeground(Color.white);
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(350, 480, 80, 16);
-
-        jLabel12.setText("9864527453");
-        jLabel12.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel12.setForeground(Color.white);
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(500, 480, 130, 16);
-
-        pokharaprice.setText("Price");
-        pokharaprice.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pokharapriceActionPerformed(evt);
-            }
-        });
-        getContentPane().add(pokharaprice);
-        pokharaprice.setBounds(340, 550, 75, 29);
-
-        details1.setText("Details");
-        details1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                details1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(details1);
-        details1.setBounds(490, 550, 88, 29);
-
-
-        jLabel17.setText("Name");
-        jLabel17.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel17.setForeground(Color.white);
-        getContentPane().add(jLabel17);
-        jLabel17.setBounds(20, 420, 60, 16);
-
-        jLabel18.setText("Pokhara Guest House");
-        jLabel18.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel18.setForeground(Color.white);
-        getContentPane().add(jLabel18);
-        jLabel18.setBounds(120, 420, 200, 16);
-
-        jLabel19.setText("Gmail");
-        jLabel19.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel19.setForeground(Color.white);
-        getContentPane().add(jLabel19);
-        jLabel19.setBounds(20, 480, 80, 16);
-
-        jLabel20.setText("PokharaguestH@gmail.com");
-        jLabel20.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
-        jLabel20.setForeground(Color.white);
-        getContentPane().add(jLabel20);
-        jLabel20.setBounds(120, 480, 190, 16);
-
-        jLabel21.setText("Name");
-        getContentPane().add(jLabel21);
-        jLabel21.setBounds(10, 680, 36, 16);
-
-       
-
-        jLabel25.setText("Name");
-        jLabel25.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel25.setForeground(Color.white);
-        getContentPane().add(jLabel25);
-        jLabel25.setBounds(30, 180, 80, 20);
-
-        jLabel26.setText("Kathmandu Guest House");
-        jLabel26.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
-        jLabel26.setForeground(Color.white);
-        getContentPane().add(jLabel26);
-        jLabel26.setBounds(120, 180, 250, 20);
-
-        jLabel27.setText("Gmail");
-        jLabel27.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-        jLabel27.setForeground(Color.white);
-        getContentPane().add(jLabel27);
-        jLabel27.setBounds(30, 230, 60, 16);
-
-        jLabel28.setText("Kathmandu@gmail.com");
-        jLabel28.setFont(new java.awt.Font("Optima",Font.BOLD, 15));
-        jLabel28.setForeground(Color.white);
-        getContentPane().add(jLabel28);
-        jLabel28.setBounds(130, 230, 200, 16);
-
-
-        Book.setText("Book");
-        Book.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BookActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Book);
-        Book.setBounds(1160, 290, 75, 29);
-
-        Book1.setText("Book");
-        Book1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Book1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Book1);
-        Book1.setBounds(1160, 550, 70, 30);
-
-       
-        
-        Icon.setIcon(new ImageIcon("Photos/stay3.png"));
-        Icon.setBounds(-150,-200,1600,1200);
+        Icon.setIcon(new ImageIcon("Photos/Hotel up in the MOuntain-2.png"));
         getContentPane().add(Icon);
- 
+        Icon.setBounds(-10,0,1600,1050);
 
-
+      
     }// </editor-fold>                        
 
-    private void kathmandupriceActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        // TODO add your handling code here:
-    }                                              
-
-    private void detailsActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        // TODO add your handling code here:
-    }                                       
-
-    private void pokharapriceActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
-    }                                            
-
-    private void details1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void pricebtnActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void details2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
-
-    private void BookActionPerformed(java.awt.event.ActionEvent evt) {                                     
-        // TODO add your handling code here:
-        new RegisterStays().setVisible(true);;
-        
-
-    }                                    
-
-    private void Book1ActionPerformed(java.awt.event.ActionEvent evt) {                                      
-        // TODO add your handling code here:
-        new RegisterStays().setVisible(true);
-    } 
-    private void Book2ActionPerformed(java.awt.event.ActionEvent evt) {                                      
-        // TODO add your handling code here:
-        new RegisterStays().setVisible(true);
-    }                                     
-                                    
-
-    /**
-     * @param args the command line arguments
-    //  */
+   
     // public static void main(String args[]) {
     //     /* Set the Nimbus look and feel */
     //     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -355,38 +105,10 @@ public class StaysDashBoard extends javax.swing.JFrame {
     // }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JButton Book;
-    private javax.swing.JButton Book1;
-    private javax.swing.JLabel KathmanduIcon;
-    private javax.swing.JLabel Logo;
-    private javax.swing.JButton details;
-    private javax.swing.JButton details1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel kathmandu;
-    private javax.swing.JButton kathmanduprice;
-    private javax.swing.JLabel location;
-    private javax.swing.JLabel pokhara;
-    private javax.swing.JLabel pokharaIcon;
-    private javax.swing.JButton pokharaprice;
+    private javax.swing.JButton Details2btn;
+    private javax.swing.JButton Detailsbtn;
     private javax.swing.JLabel Icon;
+    private javax.swing.JButton price2btn;
+    private javax.swing.JButton pricebtn;
     // End of variables declaration                   
 }
