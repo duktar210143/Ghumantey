@@ -11,6 +11,10 @@ public class Stays {
     private int TotalnumberofChildren;
     private String ArrivalDate;
     private String DepartureDate;
+
+    public Stays(){
+
+    }
     
     public Stays(String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate){
     this.Name = Name;
@@ -22,6 +26,25 @@ public class Stays {
     this.ArrivalDate = ArrivalDate;
     this.DepartureDate = DepartureDate;
     }
+    public Stays(int StaysID,String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate){
+        this.StaysID = StaysID;
+        this.Name = Name;
+        this.Mail = Mail;
+        this.Gender = Gender;
+        this.Pass = Pass;
+        this.TotalnumberofAdults = TotalnumberofAdults;
+        this.TotalnumberofChildren = TotalnumberofChildren;
+        this.ArrivalDate = ArrivalDate;
+        this.DepartureDate = DepartureDate;
+        }
+
+    public void setStaysID(int StaysID){
+        this.StaysID = StaysID;
+    
+    }
+    public int getStaysID(){
+        return this.StaysID;
+    }    
     public void setName(String Name){
         this.Name = Name;
 

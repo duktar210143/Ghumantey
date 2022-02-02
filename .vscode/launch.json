@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SelectStaysDash",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.SelectStaysDash",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectStays",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.SelectStays",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch RegisterTouristTest",
             "request": "launch",
             "mainClass": "Test.RegisterTouristTest",
