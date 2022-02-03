@@ -182,15 +182,15 @@ public class Home extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // if(e.getSource().equals(button))
-        // {
+         if(e.getSource().equals(button))
+         {
 
-        //     new RegisterTourist().setVisible(true);
-        // }
-        // if (e.getSource().equals(button1))
-        // {
-        //     new Login().setVisible(true);
-        // }
+            new RegisterTourist().setVisible(true);
+        }
+        if (e.getSource().equals(button1))
+        {
+            new Login().setVisible(true);
+        }
         if (e.getSource().equals(button2))
         {
             new Admin1().setVisible(true);
