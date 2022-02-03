@@ -18,6 +18,7 @@ public class Home extends JFrame implements ActionListener {
     private  JLabel label6;
     private  JButton button;
     private  JButton button1;
+    private  JButton button2;
 
     JLabel pic;
     Timer tm;
@@ -100,9 +101,9 @@ public class Home extends JFrame implements ActionListener {
 
 
 
-        button = new JButton("REGISTER");
+        button = new JButton("CUSTOMER REGISTER");
         button.setFont(new Font("Arial", Font.PLAIN, 16));
-        button.setSize(190, 30);
+        button.setSize(210, 30);
         button.setLocation(1150, 145);
         button.addActionListener(this);
         button.setBackground(Color.DARK_GRAY);
@@ -118,14 +119,14 @@ public class Home extends JFrame implements ActionListener {
         button1.setForeground(Color.WHITE);
         c.add(button1);
 
-        button1= new JButton("ADMIN LOGIN");
-        button1.setFont(new Font("Arial", Font.PLAIN, 16));
-        button1.setSize(190, 30);
-        button1.setLocation(1690, 145);
-        button1.addActionListener(this);
-        button1.setBackground(Color.DARK_GRAY);
-        button1.setForeground(Color.WHITE);
-        c.add(button1);
+        button2= new JButton("ADMIN LOGIN");
+        button2.setFont(new Font("Arial", Font.PLAIN, 16));
+        button2.setSize(190, 30);
+        button2.setLocation(1690, 145);
+        button2.addActionListener(this);
+        button2.setBackground(Color.DARK_GRAY);
+        button2.setForeground(Color.WHITE);
+        c.add(button2);
 
 
         pic = new JLabel();
@@ -152,6 +153,10 @@ public class Home extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        button.addActionListener(this);
+        button1.addActionListener(this);
+        button2.addActionListener(this);
+
     }
     //create a function to resize the image
     public void SetImageSize(int i){
@@ -177,6 +182,21 @@ public class Home extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        // if(e.getSource().equals(button))
+        // {
+
+        //     new RegisterTourist().setVisible(true);
+        // }
+        // if (e.getSource().equals(button1))
+        // {
+        //     new Login().setVisible(true);
+        // }
+        if (e.getSource().equals(button2))
+        {
+            new Admin1().setVisible(true);
+            dispose();
+        }
+
 
     }
 }

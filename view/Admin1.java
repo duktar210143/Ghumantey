@@ -85,7 +85,9 @@ public class Admin1 extends JFrame implements ActionListener {
 
         setVisible(true);
         setResizable(false);
-
+        sub.addActionListener(this);
+        sub0.addActionListener(this);
+        sub2.addActionListener(this);
 
     }
 
@@ -95,6 +97,21 @@ public class Admin1 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource().equals(sub))
+        {
+
+            new View().setVisible(true);
+            
+        }
+        // if (e.getSource().equals(sub0))
+        // {
+        //     new sub0().setVisible(true);
+        // }
+        if (e.getSource().equals(sub2))
+        {
+            new Home().setVisible(true);
+            dispose();
+        }
 
     }
 }

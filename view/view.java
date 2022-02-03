@@ -6,17 +6,16 @@ import javax.swing.table.DefaultTableModel;
 import controller.StaysController2;
 import model.Stays2;
 import java.awt.*;
-import java.awt.event.*;
 import java.util.List;
 
-public class view extends JFrame   {
+public class View extends JFrame   {
 
     Object[] columns = { "StaysID","Name","ArrivalDate", "DepartureDate", "TotalnumberofAdults", "DepartureDate" };
     String data[][];
     JTable table;
     DefaultTableModel model;
 
-    public view() {
+    public View() {
 
         fillArray();
 
