@@ -140,7 +140,7 @@ public class Registercar extends JFrame implements ActionListener{
         private boolean checkFields(){
     
             if(tx1.getText().equals("")){
-                JOptionPane.showMessageDialog(null,"starting place is empty");
+                JOptionPane.showMessageDialog(null,"Starting place is empty");
                 tx1.requestFocus();
                 flag = true;
             }else if(tx2.getText().equals("")){

@@ -1,16 +1,43 @@
 package view;
+
+import controller.Buscontroller;
+import model.Bus;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.JOptionPane;
 
-public class registerbus extends JFrame{
-    JLabel lb1 ,lb2, lb3, lb4;
-    JComboBox cb1,cb2,cb3,cb4;
-    JTextField tx1,tx2;
-    JButton bt1;
-    public registerbus(){
+
+
+public class Registerbus extends JFrame implements ActionListener  {
+    private static JLabel lb1 ,lb2, lb3, lb4;
+    private static JComboBox cb1,cb2,cb3,cb4;
+    private static JTextField tx1,tx2;
+    private static JButton bt1;
+    Buscontroller buscontroller;
+
+    public void registerbus(){
+       String start = tx1.getText();
+       String end = tx2.getText();
+       String Arrival = (String)cb1.getSelectedItem()+" "+(String)cb2.getSelectedItem();
+       String Departure = (String)cb3.getSelectedItem()+" "+(String)cb4.getSelectedItem();
+       buscontroller = new Buscontroller();
+       Bus bus = new Bus(start,end,Arrival,Departure);
+       int insert = buscontroller.registerbus(bus);
+
+       if(insert>0)
+       JOptionPane.showMessageDialog(null,"successfully registered");
+       else 
+       JOptionPane.showMessageDialog(null, "failed to register");
+
+   }
+   public Registerbus(){
+           
       
 //FOR lables==========================================================================================================================
        lb1 = new JLabel("Starting point:::");
@@ -71,6 +98,7 @@ public class registerbus extends JFrame{
 // FOR submit button=========================================================================================================================
         bt1 = new JButton("Submit");
         bt1.setBounds(300,200,100,30);
+        bt1.addActionListener(this);
         add(bt1);
 
 
@@ -94,11 +122,41 @@ public class registerbus extends JFrame{
 
 
 
-} public static void main(String[] args) {
-    new registerbus();
+} 
+
+        
+@Override
+public void actionPerformed(ActionEvent e) {
+    // TODO Auto-generated method stub
+    if(!checkFields())
+    registerbus();
+
+
     
 }
+boolean flag = false;
+        private boolean checkFields(){
+    
+            if(tx1.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Starting place is empty");
+                tx1.requestFocus();
+                flag = true;
+            }else if(tx2.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Destination place is empty is empty");
+                tx2.requestFocus();
+                flag = true;
+            }
+            return flag;
+        }
+    
+    
+
+ public static void main(String[] args) {
+    
+new Registerbus();
     
 }
+}
+
 
 

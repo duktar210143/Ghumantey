@@ -52,8 +52,8 @@ public ResultSet retrieve(String query) {
     }
     return rows;
 }
-// public static void main(String[] args) {
- //   new dbconnection();
-// }
+ //public static void main(String[] args) {
+   // new dbconnection();
+ //}
 }
 
