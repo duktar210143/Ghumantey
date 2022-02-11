@@ -1,6 +1,4 @@
 package controller;
-import view.touristDashboard.SelectStaysDash;
-
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;

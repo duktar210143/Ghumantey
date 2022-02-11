@@ -24,7 +24,7 @@ public class Login {
       frame.setBounds(400,400,350,450);
       frame.setLayout(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      frame.setLocationRelativeTo(null);
+      frame.setLocationRelativeTo(null); 
       JLabel lblUsername = new JLabel("Username");
       JLabel lblPassword = new JLabel("Password");
 

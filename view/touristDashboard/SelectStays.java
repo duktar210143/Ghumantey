@@ -11,13 +11,12 @@ import java.awt.*;
 import controller.StaysController;
 import model.Stays;
 
-public class SelectStays extends JFrame   {
-    
+public class SelectStays extends JFrame   {    
     Object[] columns = {"Stays ID","Name","Mail","Pass","Kids count","Adults Count","Arrival","Departure"};
     String data[][];
     JTable table;
     DefaultTableModel model;
-    SelectStaysDash s;
+    // SelectStaysDash s;
     String pass;
 
     public SelectStays(List<Stays> stays,String pass){
@@ -37,8 +36,7 @@ public class SelectStays extends JFrame   {
         table.setSelectionBackground(Color.green);
         table.getTableHeader().setBackground(Color.yellow);
         table.getTableHeader().setFont(new Font("Serif", Font.BOLD, 16));
-        add(new JScrollPane(table), BorderLayout.CENTER);
-    
+        add(new JScrollPane(table), BorderLayout.CENTER);   
         setVisible(true);
 
     }

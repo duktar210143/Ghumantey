@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PriceDashboard",
+            "request": "launch",
+            "mainClass": "view.tourist.PriceDashboard",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch SelectStaysDash",
             "request": "launch",
             "mainClass": "view.touristDashboard.SelectStaysDash",

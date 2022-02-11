@@ -1,23 +1,16 @@
 package view.touristDashboard;
-
 import java.util.List;
-
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-
 import com.mysql.cj.protocol.Resultset;
-
 import controller.StaysController;
 import model.Stays;
-
 public class SelectStaysDash extends javax.swing.JFrame {
     Object[] columns = {"Name","Mail","Pass","Arrival","Departure"};
     String data[][];
     JTable table;
     DefaultTableModel model;
-
     /**
      * Creates new form SelectStays
      */
@@ -25,8 +18,6 @@ public class SelectStaysDash extends javax.swing.JFrame {
         
         initComponents();
     }
-
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
