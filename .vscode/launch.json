@@ -6,6 +6,7 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Launch Admin1",
             "request": "launch",
             "mainClass": "view.Admin1",
@@ -185,6 +186,40 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+=======
+            "name": "Launch Cardash",
+            "request": "launch",
+            "mainClass": "view.Car.Cardash",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Busdash",
+            "request": "launch",
+            "mainClass": "view.Bus.Busdash",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Passcode",
+            "request": "launch",
+            "mainClass": "view.Bus.Passcode",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch dbconnection",
+            "request": "launch",
+            "mainClass": "database.dbconnection",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registerbus",
+            "request": "launch",
+            "mainClass": "view.Bus.Registerbus",
+            "projectName": "Trial_d84b0db4"
+>>>>>>> 5f44e0ef1c835ca39aefcd3e2b0ba6d2cd42171b
         },
         {
             "type": "java",
@@ -194,6 +229,7 @@
         },
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Launch Dashboard",
             "request": "launch",
             "mainClass": "tourist.Dashboard",
@@ -212,6 +248,19 @@
             "request": "launch",
             "mainClass": "view.tourist.Login",
             "projectName": "Ghumantey_89d2b4ae"
+=======
+            "name": "Launch Registerbus",
+            "request": "launch",
+            "mainClass": "view.Registerbus",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registercar",
+            "request": "launch",
+            "mainClass": "view.Registercar",
+            "projectName": "Trial_d84b0db4"
+>>>>>>> 5f44e0ef1c835ca39aefcd3e2b0ba6d2cd42171b
         }
     ]
 }

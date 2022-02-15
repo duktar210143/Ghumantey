@@ -22,7 +22,7 @@ public class TouristController {
 
        db = new Dbconnection();
     //    return db.manipulate(query);
-    return db.maniulate(query);
+    return db.manipulate(query);
     }
 
 

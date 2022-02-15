@@ -95,9 +95,9 @@ public class Admin1 extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        new Admin1();
-    }
+    // public static void main(String[] args) {
+    //     new Admin1();
+    // }
 
     @Override
     public void actionPerformed(ActionEvent e) {

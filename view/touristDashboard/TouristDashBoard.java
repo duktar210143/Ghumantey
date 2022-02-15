@@ -7,6 +7,8 @@ import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
 import Photos.Icons.About;
+import view.Bus.Busdash;
+import view.Car.Cardash;
 
 /**
  *
@@ -104,30 +106,6 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
 
         @Override
         public void mouseClicked(MouseEvent e) {
-        //     try {
-        //         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-        //             if ("Nimbus".equals(info.getName())) {
-        //                 javax.swing.UIManager.setLookAndFeel(info.getClassName());
-        //                 break;
-        //             }
-        //         }
-        //     } catch (ClassNotFoundException ex) {
-        //         java.util.logging.Logger.getLogger(StaysDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        //     } catch (InstantiationException ex) {
-        //         java.util.logging.Logger.getLogger(StaysDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        //     } catch (IllegalAccessException ex) {
-        //         java.util.logging.Logger.getLogger(StaysDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        //     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-        //         java.util.logging.Logger.getLogger(StaysDashBoard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        //     }
-        //     //</editor-fold>
-    
-        //     /* Create and display the form */
-        //     java.awt.EventQueue.invokeLater(new Runnable() {
-        //         public void run() {
-        //             new StaysDashBoard().setVisible(true);
-        //         }   
-        // });
         new StaysDashBoard().setVisible(true);
     }
 
@@ -159,14 +137,68 @@ public class TouristDashBoard extends javax.swing.JFrame implements ActionListen
         Cars.setText(" Cars                  ");
         Cars.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         Tmenu.add(Cars);
+        Cars.addMouseListener(new MouseListener() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+            new Cardash().setVisible(true);
+        }
+    
+            @Override
+            public void mousePressed(MouseEvent e) {
+    
+            }
+    
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+    
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+    
+            @Override
+            public void mouseExited(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }});
 
         Bus.setText("Bus                     ");
         Bus.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         Tmenu.add(Bus);
+        Bus.addMouseListener(new MouseListener() {
 
-        jMenu8.setText("packages");
-        jMenu8.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        Tmenu.add(jMenu8);
+            @Override
+            public void mouseClicked(MouseEvent e) {
+            new Busdash().setVisible(true);
+        }
+    
+            @Override
+            public void mousePressed(MouseEvent e) {
+    
+            }
+    
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+    
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }
+    
+            @Override
+            public void mouseExited(MouseEvent e) {
+                // TODO Auto-generated method stub
+                
+            }});
 
         setJMenuBar(Tmenu);
         Tmenu.getAccessibleContext().setAccessibleName("Tmenubar");

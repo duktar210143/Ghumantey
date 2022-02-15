@@ -25,7 +25,7 @@ public class StaysController {
 
         db = new Dbconnection();
         // return DbmanipulateQuery
-        return db.maniulate(query);
+        return db.manipulate(query);
 
     }
     public List<Stays>viewStays(String PassCode){
