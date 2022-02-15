@@ -37,7 +37,8 @@ public class StaysDashBoard extends javax.swing.JFrame {
         pricebtn = new javax.swing.JButton();
         Icon = new javax.swing.JLabel();
 
-        setSize(2560,1600);
+        
+        setBounds(0,0,1450,900);
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 

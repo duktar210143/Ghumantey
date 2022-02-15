@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 
 import controller.TouristController;
 import model.Tourist;
-import view.tourist.RegisterTourist;
+
 import view.touristDashboard.TouristDashBoard;
 
 
@@ -24,7 +24,7 @@ public class Login {
       frame.setBounds(400,400,350,450);
       frame.setLayout(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      frame.setLocationRelativeTo(null); 
+      frame.setLocationRelativeTo(null);
       JLabel lblUsername = new JLabel("Username");
       JLabel lblPassword = new JLabel("Password");
 
@@ -39,10 +39,10 @@ public class Login {
       frame.add(txtPassword);
 
       JButton btnLogin = new JButton("Login");
-      JButton btnRegister = new JButton("Register");
+ 
 
       frame.add(btnLogin);
-      frame.add(btnRegister);
+
 
       lblUsername.setBounds(20,50,80,25);
       lblUsername.setForeground(Color.white);
@@ -52,8 +52,8 @@ public class Login {
       txtUsername.setBounds(100,50,160,25);
       txtPassword.setBounds(100,110,160,25);
 
-      btnLogin.setBounds(30,180,100,25);
-      btnRegister.setBounds(140,180,100,25);
+      btnLogin.setBounds(110,180,110,25);
+
 
       JLabel Icon = new JLabel();
       Icon.setIcon(new ImageIcon("Photos/Screen Shot 2022-01-23 at 22.15.13.png"));
@@ -77,12 +77,12 @@ public class Login {
           
     });
 
-      btnRegister.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-          new RegisterTourist();          
-        }
-    });
+      // btnRegister.addActionListener(new ActionListener() {
+      //   @Override
+      //   public void actionPerformed(ActionEvent e) {
+      //     new RegisterTourist();          
+      //   }
+    // });
 
       frame.setVisible(true);
   

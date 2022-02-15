@@ -12,7 +12,7 @@ public class Dbconnection {
         // register the driver class
         try {
             String username = "root";
-            String password = "fairytail23";
+            String password = "root";
             Class.forName("com.mysql.cj.jdbc.Driver");
             // create the connection object
             con = DriverManager.getConnection(

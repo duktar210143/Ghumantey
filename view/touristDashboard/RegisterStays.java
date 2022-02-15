@@ -116,7 +116,10 @@ public class RegisterStays extends javax.swing.JFrame {
         
         Kidslbl.setText("Number of Kids");
         Kidslbl.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        getContentPane().add(Kidslbl);
+        Kidslbl.setBounds(45, 245, 140, 26);
         getContentPane().add(kidstxt);
+        
         kidstxt.setBounds(203, 245, 37, 26);
 
         roomIdlbl.setText("Enter preferred room Id ");

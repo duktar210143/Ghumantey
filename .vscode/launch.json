@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RegisterStays",
+            "request": "launch",
+            "mainClass": "view.touristDashboard.RegisterStays",
+            "projectName": "Ghumantey_e7562058"
+        },
+        {
+            "type": "java",
+            "name": "Launch Login",
+            "request": "launch",
+            "mainClass": "view.Login",
+            "projectName": "Ghumantey_e7562058"
+        },
+        {
+            "type": "java",
+            "name": "Launch Home",
+            "request": "launch",
+            "mainClass": "view.Home",
+            "projectName": "Ghumantey_e7562058"
+        },
+        {
+            "type": "java",
             "name": "Launch PriceDashboard",
             "request": "launch",
             "mainClass": "view.tourist.PriceDashboard",
