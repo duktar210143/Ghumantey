@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Dbconnection2",
+            "request": "launch",
+            "mainClass": "database.Dbconnection2",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch anoz",
             "request": "launch",
             "mainClass": "view.anoz",

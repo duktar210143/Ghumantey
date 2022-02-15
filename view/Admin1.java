@@ -120,7 +120,7 @@ public class Admin1 extends JFrame implements ActionListener {
         if(e.getSource().equals(sub))
         {
 
-            new View().setVisible(true);
+            new view().setVisible(true);
             
         }
         // if (e.getSource().equals(sub0))
