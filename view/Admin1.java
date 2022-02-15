@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 public class Admin1 extends JFrame implements ActionListener {
     private Container c;
     private JButton sub;
+    private JButton sub1;
+    private JButton sub3;
     private JButton sub0;
     private JButton sub2;
     private JLabel label1;
@@ -17,7 +19,7 @@ public class Admin1 extends JFrame implements ActionListener {
 
     public Admin1() {
         setTitle("Admin");
-        setBounds(600, 300, 500, 300);
+        setBounds(600, 300, 500, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         //color
@@ -29,7 +31,7 @@ public class Admin1 extends JFrame implements ActionListener {
 
 
 
-        sub = new JButton("View Booking");
+        sub = new JButton("View Stay Booking");
         sub.setFont(new Font("Arial", Font.PLAIN, 16));
         sub.setSize(150, 30);
         sub.setLocation(190, 100);
@@ -38,10 +40,28 @@ public class Admin1 extends JFrame implements ActionListener {
         sub.setForeground(Color.WHITE);
         c.add(sub);
 
+        sub1 = new JButton("View Car Booking");
+        sub1.setFont(new Font("Arial", Font.PLAIN, 16));
+        sub1.setSize(150, 30);
+        sub1.setLocation(190, 150);
+        sub1.addActionListener(this);
+        sub1.setBackground(Color.DARK_GRAY);
+        sub1.setForeground(Color.WHITE);
+        c.add(sub1);
+
+        sub3 = new JButton("View Bus Booking");
+        sub3.setFont(new Font("Arial", Font.PLAIN, 16));
+        sub3.setSize(150, 30);
+        sub3.setLocation(190, 200);
+        sub3.addActionListener(this);
+        sub3.setBackground(Color.DARK_GRAY);
+        sub3.setForeground(Color.WHITE);
+        c.add(sub3);
+
         sub0 = new JButton("Update ");
         sub0.setFont(new Font("Arial", Font.PLAIN, 16));
         sub0.setSize(150, 30);
-        sub0.setLocation(190, 170);
+        sub0.setLocation(190, 310);
         sub0.addActionListener(this);
         sub0.setBackground(Color.DARK_GRAY);
         sub0.setForeground(Color.WHITE);
@@ -70,7 +90,7 @@ public class Admin1 extends JFrame implements ActionListener {
 
         label3 = new JLabel();
         label3.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\white-24dp (3)\\2x\\update.png"));
-        label3.setBounds(125, 160, 48, 48);
+        label3.setBounds(125, 296, 48, 48);
         c.add(label3);
 
 

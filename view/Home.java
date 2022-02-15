@@ -37,7 +37,7 @@ public class Home extends JFrame implements ActionListener {
     public Home(){
         setTitle("Travel Management System");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setBounds(320,0,1400,1100);
+        setBounds(320,0,2560,1600);
 
 
         c = getContentPane();
@@ -182,20 +182,22 @@ public class Home extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-         if(e.getSource().equals(button))
-         {
-
-            new RegisterTourist().setVisible(true);
-        }
-        if (e.getSource().equals(button1))
-        {
-            new Login().setVisible(true);
-        }
         if (e.getSource().equals(button2))
         {
             new Admin1().setVisible(true);
             dispose();
         }
+        // if(e.getSource().equals(button))
+        // {
+
+        //     new RegisterTourist().setVisible(true);
+        // }
+        // if (e.getSource().equals(button1))
+        // {
+        //     new Login().setVisible(true);
+        //     dispose();
+        // }
+
 
 
     }
