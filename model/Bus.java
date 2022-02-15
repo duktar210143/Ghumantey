@@ -2,11 +2,12 @@ package model;
 
 public class Bus {
     public static int registerBus;
-    private int BusId;
+    private String busphoneno;
     private String busstartingpoint;
     private String busendingpoint;
     private String busarrivaldate;
     private String busdeparturedate;
+    
 
 
 public Bus(String busstartingpoint,String busendingpoint, String busarrivaldate, String busdeparturedate){
@@ -15,40 +16,55 @@ public Bus(String busstartingpoint,String busendingpoint, String busarrivaldate,
     this.busarrivaldate= busarrivaldate;
     this.busdeparturedate= busdeparturedate;
 }
-public Bus(){
+    
+public Bus(String busphoneno,String busstartingpoint,String busendingpoint,
+ String busarrivaldate, String busdeparturedate){
+     this.busphoneno = busphoneno;
+     this.busstartingpoint = busstartingpoint;
+     this.busendingpoint = busendingpoint;
+     this.busarrivaldate = busarrivaldate;
+     this.busdeparturedate = busdeparturedate;
+     
 
 }
 
 
-public int getBusId(){
-    return BusId;
+public Bus() {
 }
-public void setBusId(int BusId){
-    this.BusId = BusId;
+public String getBusphoneno(){
+    return busphoneno;
+}
+public void setBusphoneno(String busphoneno){
+    this.busphoneno = busphoneno;
 }
 public String getbusstartingpoint(){
     return busstartingpoint;
 }
-public void setbusstartingpoint(){
+public void setbusstartingpoint(String busstartingpoint){
     this.busstartingpoint = busstartingpoint;
 }
 public String getbusendingpoint(){
     return busendingpoint;
 }
-public void setbusendingpoint(){
+public void setbusendingpoint(String busendingpoint){
     this.busendingpoint= busendingpoint;
 }
 public String getbusarrivaldate(){
     return busarrivaldate;
 }
-public void setbusarrivaldate(){
+public void setbusarrivaldate(String busarrivaldate){
     this.busarrivaldate= busarrivaldate;
 }
 public String getbusdeparturedate(){
     return busdeparturedate;
 }
-public void setbusdeparturedate(){
+public void setbusdeparturedate(String busdeparturedate){
     this.busdeparturedate=busdeparturedate;
 }
+
+
+
+
+
     
 }

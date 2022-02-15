@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class dbconnection {
 
-    Connection con;
+    public Connection con;
     Statement st;
     ResultSet rows;
     int val;
@@ -30,8 +30,18 @@ public class dbconnection {
         }
     }
 
-  // Used for insert, update, delete
-  public int maniulate(String query) {
+      // method to insert data using prepared statement
+      public int manipulate(PreparedStatement st) {
+        try {
+            val = st.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return val;
+    }
+
+  // Used for insert, update, delete 
+  public int manipulate(String query) {
 
     try {
         val = st.executeUpdate(query);
@@ -52,8 +62,8 @@ public ResultSet retrieve(String query) {
     }
     return rows;
 }
- //public static void main(String[] args) {
-   // new dbconnection();
- //}
+// public static void main(String[] args) {
+//    new dbconnection();
+//  }
 }
 

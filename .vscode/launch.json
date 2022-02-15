@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Cardash",
+            "request": "launch",
+            "mainClass": "view.Car.Cardash",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Busdash",
+            "request": "launch",
+            "mainClass": "view.Bus.Busdash",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Passcode",
+            "request": "launch",
+            "mainClass": "view.Bus.Passcode",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch dbconnection",
+            "request": "launch",
+            "mainClass": "database.dbconnection",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registerbus",
+            "request": "launch",
+            "mainClass": "view.Bus.Registerbus",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registerbus",
+            "request": "launch",
+            "mainClass": "view.Registerbus",
+            "projectName": "Trial_d84b0db4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Registercar",
+            "request": "launch",
+            "mainClass": "view.Registercar",
+            "projectName": "Trial_d84b0db4"
+        }
+    ]
+}
