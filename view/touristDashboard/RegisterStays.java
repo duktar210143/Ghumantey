@@ -1,146 +1,12 @@
  package view.touristDashboard;
 
 import java.awt.event.ActionEvent;
-
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import controller.StaysController;
 import model.Stays;
-
-// import javax.swing.JButton;
-// import javax.swing.JComboBox;
-// import javax.swing.JFrame;
-// import javax.swing.JLabel;
-// import javax.swing.JOptionPane;
-// import javax.swing.JTextField;
-// import javax.swing.WindowConstants;
-
-// import java.awt.event.*;
-// import java.awt.*;
-
-// import model.Stays;
-// import model.Tourist;
-// import controller.StaysController;
-
-// public class RegisterStays
-//  extends JFrame 
-// implements ActionListener {
-
-//          private JLabel lb1 ,lb2, lb3, lb4;
-//          private JComboBox cb1,cb2,cb3,cb4;
-//          private JTextField tx1,tx2;
-//          private JButton bt1;
-//          StaysController staysController;
-
-//          private void registerStays(){
-//             int Totaladults = Integer.parseInt(tx1.getText());
-//             int Totalkids = Integer.parseInt(tx2.getText());
-//             String Arrival = (String)cb1.getSelectedItem()+" "+(String)cb2.getSelectedItem();
-//             String Departure = (String)cb3.getSelectedItem()+" "+(String)cb4.getSelectedItem();
-
-
-//             Stays stays = new Stays(Totaladults,Totalkids,Arrival,Departure);
-
-//             staysController = new StaysController();
-//             int insert = staysController.registerStays(stays);
-//             if(insert>0){
-//                 JOptionPane.showMessageDialog(null, "Booked");
-//             }
-//             else
-//             JOptionPane.showMessageDialog(null, "something went wrong");
-//          }
-         
-                   
-//          public RegisterStays(){
-           
-// //FOR lables==========================================================================================================================
-//             lb1 = new JLabel("Total number of adults");
-//             lb1.setBounds(50, 10, 180, 30);
-//             add(lb1);
-
-//             lb2 = new JLabel("Total numbers of children");
-//             lb2.setBounds(330,10,180,30);
-//             add(lb2);
-
-//             lb3 = new JLabel("Arrival");
-//             lb3.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-//             lb3.setBounds(50, 120, 100, 30);
-//             add(lb3);
-
-            
-//             lb4 = new JLabel("Departure");
-//             lb4.setFont(new java.awt.Font("Optima",Font.BOLD, 20));
-//             lb4.setBounds(330, 120, 100, 30);
-//             add(lb4);
-
-// //FOR textfields=====================================================================================================================
-//             tx1 = new JTextField();
-//             tx1.setBounds(220, 10, 30, 30);
-//             add(tx1);
-
-//             tx2 = new JTextField();
-//             tx2.setBounds(520, 10, 30, 30);
-//             add(tx2);
-
-// //FOR comboboxes=========================================================================================================================
-
-//              String date[] = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
-//              String months[] = {"Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"};
-            
-
-//              cb1 = new JComboBox<>(months);
-//              cb1.setBounds(110, 100, 90, 130);
-//              add(cb1);
-
-//              cb2 = new JComboBox<>(date);
-//              cb2.setBounds(200, 100, 90, 130);
-//              add(cb2);
-
-//              cb3 = new JComboBox<>(months);
-//              cb3.setBounds(420,100,90,130);
-//              add(cb3);
-             
-//              cb4 = new JComboBox<>(date);
-//              cb4.setBounds(500, 100, 90, 130);
-//              add(cb4);
-// // FOR submit button=========================================================================================================================
-//              bt1 = new JButton("Submit");
-//              bt1.setBounds(300,200,100,30);
-//              add(bt1);
-
-//             bt1.addActionListener(this);
-
-
-//             setTitle("Stays");
-//             // setDefaultCloseOperation(EXIT_ON_CLOSE);
-//             setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-//             setBounds(400,150,700,300);
-//             setLayout(null);
-//             //setResizable(false);
-//             setVisible(true);
-        
-//          }
-                 
-//      public static void main(String[] args) {
-//          new RegisterStays();
-        
-//      }
-
-//     @Override
-//     public void actionPerformed(ActionEvent e) {
-//         if(e.getSource()==bt1){
-//             registerStays();
-//         }
-        
-//     }
-// }
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
 /**
  *
  * @author duktartamang
@@ -167,6 +33,8 @@ public class RegisterStays extends javax.swing.JFrame {
         Namelbl = new javax.swing.JLabel();
         nametxt = new javax.swing.JTextField();
         emaillbl = new javax.swing.JLabel();
+        roomIdlbl = new javax.swing.JLabel();
+        roomIdtxt = new javax.swing.JTextField();
         emailtxt = new javax.swing.JTextField();
         genderlbl = new javax.swing.JTextField();
         maleRbtn = new javax.swing.JRadioButton();
@@ -245,13 +113,18 @@ public class RegisterStays extends javax.swing.JFrame {
         });
         getContentPane().add(Adultstxt);
         Adultstxt.setBounds(203, 200, 37, 26);
-
-        Kidslbl.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        
         Kidslbl.setText("Number of Kids");
-        getContentPane().add(Kidslbl);
-        Kidslbl.setBounds(45, 254, 123, 17);
+        Kidslbl.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         getContentPane().add(kidstxt);
         kidstxt.setBounds(203, 245, 37, 26);
+
+        roomIdlbl.setText("Enter preferred room Id ");
+        roomIdlbl.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        roomIdlbl.setBounds(45,420,400,26);
+        getContentPane().add(roomIdlbl);
+        roomIdtxt.setBounds(250,420,30,26);
+        getContentPane().add(roomIdtxt);
 
         jButton1.setText("Book");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -267,11 +140,11 @@ public class RegisterStays extends javax.swing.JFrame {
         jButton1.setBounds(71, 525, 97, 29);
 
         passcodelbl.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        passcodelbl.setText("Set a passcode");
+        passcodelbl.setText("PhoneNumber");
         getContentPane().add(passcodelbl);
         passcodelbl.setBounds(45, 298, 106, 17);
         getContentPane().add(passcodetxt);
-        passcodetxt.setBounds(203, 294, 37, 26);
+        passcodetxt.setBounds(203, 294, 107, 26);
 
         String date[] = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
         String months[] = {"Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec"};
@@ -329,37 +202,37 @@ public class RegisterStays extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    // public static void main(String args[]) {
+    //     /* Set the Nimbus look and feel */
+    //     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+    //     /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+    //      * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+    //      */
+    //     try {
+    //         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+    //             if ("Nimbus".equals(info.getName())) {
+    //                 javax.swing.UIManager.setLookAndFeel(info.getClassName());
+    //                 break;
+    //             }
+    //         }
+    //     } catch (ClassNotFoundException ex) {
+    //         java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    //     } catch (InstantiationException ex) {
+    //         java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    //     } catch (IllegalAccessException ex) {
+    //         java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    //     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+    //         java.util.logging.Logger.getLogger(RegisterStays.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    //     }
+    //     //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new RegisterStays().setVisible(true);
-            }
-        });
-    }
+    //     /* Create and display the form */
+    //     java.awt.EventQueue.invokeLater(new Runnable() {
+    //         public void run() {
+    //             new RegisterStays().setVisible(true);
+    //         }
+    //     });
+    // }
 
     // Variables declaration - do not modify                     
     private javax.swing.JTextField Adultstxt;
@@ -368,6 +241,7 @@ public class RegisterStays extends javax.swing.JFrame {
     private javax.swing.JLabel Numberadultslbl;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel emaillbl;
+    private javax.swing.JLabel roomIdlbl;
     private javax.swing.JTextField emailtxt;
     private javax.swing.JRadioButton femaleRbtn;
     private javax.swing.JTextField genderlbl;
@@ -377,6 +251,7 @@ public class RegisterStays extends javax.swing.JFrame {
     private javax.swing.JTextField nametxt;
     private javax.swing.JLabel passcodelbl;
     private javax.swing.JTextField passcodetxt;
+    private javax.swing.JTextField roomIdtxt;
     private javax.swing.JComboBox cb1;
     private javax.swing.JComboBox cb2;
     private javax.swing.JComboBox cb3;
@@ -401,9 +276,10 @@ public class RegisterStays extends javax.swing.JFrame {
             int Totalkids = Integer.parseInt(kidstxt.getText());
             String Arrival = (String)cb1.getSelectedItem()+" "+(String)cb2.getSelectedItem();
             String Departure = (String)cb3.getSelectedItem()+" "+(String)cb4.getSelectedItem();
+            int roomId = Integer.parseInt(roomIdtxt.getText());
 
 
-            Stays stays = new Stays(name,email,gender,pass,Totaladults,Totalkids,Arrival,Departure);
+            Stays stays = new Stays(name,email,gender,pass,Totaladults,Totalkids,Arrival,Departure,roomId);
 
             staysController = new StaysController();
             int insert = staysController.registerStays(stays);

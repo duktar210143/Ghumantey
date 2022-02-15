@@ -2,14 +2,13 @@ package view.tourist;
 import java.awt.*;
 import javax.swing.*;
 import model.KPrice;
-import javax.swing.JScrollPane;
 import java.util.List;
-import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import controller.KPriceController;
 
-public class PriceDashboard extends JFrame {
-    Object[] column = {"RoomId","RoomType","RooomPrice"};
+ public class PriceDashboard extends JFrame {
+
+    Object[] column = {"RoomId","RoomType","RooomPrice per Night"};
     String Data[][];
     JTable table;
     DefaultTableModel Model;
@@ -23,21 +22,20 @@ public class PriceDashboard extends JFrame {
     setLocationRelativeTo(null);
     setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     
-    book = new JButton("BOOK");
-    book.setBounds(400,60,40,20);
-    add(book);
-
-    setLayout(new BorderLayout());
+    book = new JButton("Book");
+    book.setBounds(390,50,30,20);
+    // setLayout(new BorderLayout());
     table = new JTable(Model);
     
-    table.setFont(new Font("Serif", Font.ITALIC, 16));
-    table.setSelectionBackground(Color.green);
-    table.getTableHeader().setBackground(Color.yellow);
-    table.getTableHeader().setFont(new Font("Serif", Font.BOLD, 16));
+    table.setFont(new Font("Serif", Font.ITALIC, 17));
+    table.setSelectionBackground(Color.BLUE);
+    table.getTableHeader().setBackground(Color.RED);
+    table.getTableHeader().setFont(new Font("Serif", Font.BOLD, 20));
+    table.add(book);
     add(new JScrollPane(table), BorderLayout.CENTER);  
-
+    
     setVisible(true);
-
+ 
     }
     public void fillArray(){
         KPriceController controller = new KPriceController();
@@ -51,7 +49,8 @@ public class PriceDashboard extends JFrame {
         }
         Model = new DefaultTableModel(Data,column);    
     }
-    public static void main(String[] args) {
-        new PriceDashboard(null);
-    }
+    // public static void main(String[] args) {
+    //     new PriceDashboard(null);
+    // }
 }
+

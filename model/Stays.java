@@ -11,12 +11,13 @@ public class Stays {
     private int TotalnumberofChildren;
     private String ArrivalDate;
     private String DepartureDate;
+    private int roomId;
 
     public Stays(){
 
     }
     
-    public Stays(String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate){
+    public Stays(String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate,int roomId){
     this.Name = Name;
     this.Mail = Mail;
     this.Gender = Gender;
@@ -25,8 +26,9 @@ public class Stays {
     this.TotalnumberofChildren = TotalnumberofChildren;
     this.ArrivalDate = ArrivalDate;
     this.DepartureDate = DepartureDate;
+    this.roomId = roomId;
     }
-    public Stays(int StaysID,String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate){
+    public Stays(int StaysID,String Name,String Mail,char Gender,String Pass,int TotalnumberofAdults, int TotalnumberofChildren, String ArrivalDate,String DepartureDate,int roomId){
         this.StaysID = StaysID;
         this.Name = Name;
         this.Mail = Mail;
@@ -36,6 +38,7 @@ public class Stays {
         this.TotalnumberofChildren = TotalnumberofChildren;
         this.ArrivalDate = ArrivalDate;
         this.DepartureDate = DepartureDate;
+        this.roomId = roomId;
         }
 
     public void setStaysID(int StaysID){
@@ -100,5 +103,12 @@ public class Stays {
     }
     public String getDepartureDate(){
         return this.DepartureDate;
+    }
+    public void setroomId(int roomId){
+        this.roomId = roomId;
+
+    }
+    public int getroomId(){
+        return this.roomId;
     }
 }

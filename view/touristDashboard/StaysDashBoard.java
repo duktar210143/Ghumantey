@@ -1,6 +1,10 @@
 package view.touristDashboard;
 
+import java.awt.Font;
+
 import javax.swing.ImageIcon;
+
+import view.tourist.PriceDashboard;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -31,8 +35,6 @@ public class StaysDashBoard extends javax.swing.JFrame {
 
         Detailsbtn = new javax.swing.JButton();
         pricebtn = new javax.swing.JButton();
-        Details2btn = new javax.swing.JButton();
-        price2btn = new javax.swing.JButton();
         Icon = new javax.swing.JLabel();
 
         setSize(2560,1600);
@@ -40,36 +42,38 @@ public class StaysDashBoard extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         Detailsbtn.setText("Details");
+        Detailsbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DetailsbtnActionPerformed(evt);
+            }
+        });
+        Detailsbtn.setFont(new Font("Arial", Font.BOLD, 20));
         getContentPane().add(Detailsbtn);
-        Detailsbtn.setBounds(20, 620, 75, 29);
+        Detailsbtn.setBounds(20, 620, 120, 35);
 
-        pricebtn.setText("Price");
+        pricebtn.setText("Book");
         pricebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pricebtnActionPerformed(evt);
             }
         });
+        pricebtn.setFont(new Font("Arial", Font.BOLD, 20));
         getContentPane().add(pricebtn);
-        pricebtn.setBounds(120, 620, 75, 29);
+        pricebtn.setBounds(200, 620, 120, 35);
 
-        Details2btn.setText("Details");
-        getContentPane().add(Details2btn);
-        Details2btn.setBounds(720,620, 75, 29);
-
-        price2btn.setText("Price");
-        getContentPane().add(price2btn);
-        price2btn.setBounds(820,620, 75, 29);
-
-        Icon.setIcon(new ImageIcon("Photos/Hotel up in the MOuntain-2.png"));
+        Icon.setIcon(new ImageIcon("Photos/Motel.png"));
         getContentPane().add(Icon);
-        Icon.setBounds(-10,0,1600,1050);
+        Icon.setBounds(0,0,1600,1050);
 
       
     }// </editor-fold>                        
 
     private void pricebtnActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
+        new RegisterStays().setVisible(true);
+    } 
+    private void DetailsbtnActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        new PriceDashboard(null);
+    }                                           
 
    
     // public static void main(String args[]) {
@@ -105,10 +109,8 @@ public class StaysDashBoard extends javax.swing.JFrame {
     // }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JButton Details2btn;
     private javax.swing.JButton Detailsbtn;
     private javax.swing.JLabel Icon;
-    private javax.swing.JButton price2btn;
     private javax.swing.JButton pricebtn;
     // End of variables declaration                   
 }

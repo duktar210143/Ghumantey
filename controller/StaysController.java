@@ -46,6 +46,7 @@ public class StaysController {
                 stays.setDepartureDate(rs.getString("DepartureDate"));
                 stays.setTotalnumberofAdults(rs.getInt("TotalnumberofAdults"));
                 stays.setTotalnumberofChildren(rs.getInt("TotalnumberofChildren"));
+                stays.setroomId(rs.getInt("RoomId"));
 
                 lststays.add(stays);
             }
