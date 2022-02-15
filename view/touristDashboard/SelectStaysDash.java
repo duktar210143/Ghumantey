@@ -1,9 +1,10 @@
 package view.touristDashboard;
 import java.util.List;
+
+import javax.naming.spi.DirStateFactory.Result;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import com.mysql.cj.protocol.Resultset;
 import controller.StaysController;
 import model.Stays;
 public class SelectStaysDash extends javax.swing.JFrame {
@@ -109,7 +110,7 @@ public class SelectStaysDash extends javax.swing.JFrame {
     private javax.swing.JLabel passlbl;
     // End of variables declaration     
 
-    public Resultset getComponentAt(String text) {
+    public Result getComponentAt(String text) {
         return null;
     }
                 

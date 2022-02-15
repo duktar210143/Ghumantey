@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "java.project.sourcePaths": [
         "."
     ],
@@ -11,10 +10,4 @@
     "java.debug.settings.enableRunDebugCodeLens": false,
     "java.test.editor.enableShortcuts": false,
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m"
-=======
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\user\\Downloads\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27.jar"
-    ]
->>>>>>> Design_James
 }

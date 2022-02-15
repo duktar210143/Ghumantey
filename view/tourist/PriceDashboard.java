@@ -22,8 +22,7 @@ import controller.KPriceController;
     setLocationRelativeTo(null);
     setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     
-    book = new JButton("Book");
-    book.setBounds(390,50,30,20);
+
     // setLayout(new BorderLayout());
     table = new JTable(Model);
     
@@ -31,7 +30,7 @@ import controller.KPriceController;
     table.setSelectionBackground(Color.BLUE);
     table.getTableHeader().setBackground(Color.RED);
     table.getTableHeader().setFont(new Font("Serif", Font.BOLD, 20));
-    table.add(book);
+
     add(new JScrollPane(table), BorderLayout.CENTER);  
     
     setVisible(true);

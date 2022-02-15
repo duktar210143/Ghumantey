@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Admin1",
+            "request": "launch",
+            "mainClass": "view.Admin1",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
+            "name": "Launch Home",
+            "request": "launch",
+            "mainClass": "view.Home",
+            "projectName": "Ghumantey_89d2b4ae"
+        },
+        {
+            "type": "java",
             "name": "Launch RegisterStays",
             "request": "launch",
             "mainClass": "view.touristDashboard.RegisterStays",

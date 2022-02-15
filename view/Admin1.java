@@ -36,8 +36,6 @@ public class Admin1 extends JFrame implements ActionListener {
         sub.setSize(150, 30);
         sub.setLocation(190, 100);
         sub.addActionListener(this);
-        sub.setBackground(Color.DARK_GRAY);
-        sub.setForeground(Color.WHITE);
         c.add(sub);
 
         sub1 = new JButton("View Car Booking");
@@ -45,8 +43,6 @@ public class Admin1 extends JFrame implements ActionListener {
         sub1.setSize(150, 30);
         sub1.setLocation(190, 150);
         sub1.addActionListener(this);
-        sub1.setBackground(Color.DARK_GRAY);
-        sub1.setForeground(Color.WHITE);
         c.add(sub1);
 
         sub3 = new JButton("View Bus Booking");
@@ -54,19 +50,7 @@ public class Admin1 extends JFrame implements ActionListener {
         sub3.setSize(150, 30);
         sub3.setLocation(190, 200);
         sub3.addActionListener(this);
-        sub3.setBackground(Color.DARK_GRAY);
-        sub3.setForeground(Color.WHITE);
         c.add(sub3);
-
-        sub0 = new JButton("Update ");
-        sub0.setFont(new Font("Arial", Font.PLAIN, 16));
-        sub0.setSize(150, 30);
-        sub0.setLocation(190, 310);
-        sub0.addActionListener(this);
-        sub0.setBackground(Color.DARK_GRAY);
-        sub0.setForeground(Color.WHITE);
-        c.add(sub0);
-
 
 
         sub2 = new JButton("Log Out");
@@ -79,18 +63,18 @@ public class Admin1 extends JFrame implements ActionListener {
         c.add(sub2);
 
         label0 = new JLabel();
-        label0.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\admin.png"));
+        label0.setIcon(new ImageIcon("image/admin.png"));
         label0.setBounds(10, 5, 72, 72);
         c.add(label0);
 
         label1 = new JLabel();
-        label1.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\white-24dp (2)\\2x\\view.png"));
+        label1.setIcon(new ImageIcon("image/view.png"));
         label1.setBounds(125, 90, 48, 48);
         c.add(label1);
 
         label3 = new JLabel();
-        label3.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\white-24dp (3)\\2x\\update.png"));
-        label3.setBounds(125, 296, 48, 48);
+        label3.setIcon(new ImageIcon("image/update.png"));
+        label3.setBounds(60, 5, 72, 72);
         c.add(label3);
 
 
@@ -120,7 +104,7 @@ public class Admin1 extends JFrame implements ActionListener {
         if(e.getSource().equals(sub))
         {
 
-            new View().setVisible(true);
+            new view().setVisible(true);
             
         }
         // if (e.getSource().equals(sub0))

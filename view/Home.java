@@ -28,13 +28,13 @@ public class Home extends JFrame implements ActionListener {
     int x = 0;
     //Images Path In Array
     private String[] list = {
-            "C:\\Users\\user\\Downloads\\Book Now\\1.png",//0
-            "C:\\Users\\user\\Downloads\\Book Now\\2.png",//1
-            "C:\\Users\\user\\Downloads\\Book Now\\3.png",//2
-            "C:\\Users\\user\\Downloads\\Book Now\\4.png",//3
-            "C:\\Users\\user\\Downloads\\Book Now\\5.png",//4
-            "C:\\Users\\user\\Downloads\\Book Now\\6.png",//5
-            "C:\\Users\\user\\Downloads\\Book Now\\7.png"//6
+            "image/1.png",//0
+            "image/2.png",//1
+            "image/3.png",//2
+            "image/4.png",//3
+            "image/5.png",//4
+            "image/6.png",//5
+            "image/7.jpg"//6
 //            "C:\\Users\\user\\Downloads\\Book Now\\7.png"//7
     };
     public Home(){
@@ -47,14 +47,14 @@ public class Home extends JFrame implements ActionListener {
         c.setLayout(null);
 
         label = new JLabel();
-        label.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\Home.jpg"));
+        label.setIcon(new ImageIcon("image/Home.jpg"));
         label.setBounds(0, 0, 1080, 1080);
         c.add(label);
 
 
 
         label1 = new JLabel("Travel Management System", SwingConstants.CENTER);
-        label1.setBounds(1050, 0, 1000, 100);
+        label1.setBounds(950, 0, 1000, 100);
         label1.setFont(new Font("Times Roman", Font.BOLD, 20));
                 Color color1=new Color(
                         102, 0, 153);
@@ -68,23 +68,23 @@ public class Home extends JFrame implements ActionListener {
         c.add(label1);
 
         label2 = new JLabel();
-        label2.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\black-24dp\\2x\\reg.png"));
+        label2.setIcon(new ImageIcon("image/reg.png"));
         label2.setBounds(1230, 97, 48, 48);
         c.add(label2);
 
         label3 = new JLabel();
-        label3.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\black-24dp (1)\\2x\\u.png"));
+        label3.setIcon(new ImageIcon("image/u.png"));
         label3.setBounds(1515, 97, 48, 48);
         c.add(label3);
 
         label4 = new JLabel();
-        label4.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\black-24dp (2)\\2x\\a.png"));
-        label4.setBounds(1760, 97, 48, 48);
+        label4.setIcon(new ImageIcon("image/a.png"));
+        label4.setBounds(1220, 450, 48, 48);
         c.add(label4);
 
         label6 = new JLabel();
-        label6.setIcon(new ImageIcon("C:\\Users\\user\\Downloads\\t.png"));
-        label6.setBounds(1650, 300, 256, 256);
+        label6.setIcon(new ImageIcon("image/ t.png"));
+        label6.setBounds(1350, 390, 256,230);
         c.add(label6);
 
         label4 = new JLabel("CONTACT : 98746258628");
@@ -109,8 +109,6 @@ public class Home extends JFrame implements ActionListener {
         button.setSize(210, 30);
         button.setLocation(1150, 145);
         button.addActionListener(this);
-        button.setBackground(Color.DARK_GRAY);
-        button.setForeground(Color.WHITE);
         c.add(button);
 
         button1= new JButton("CUSTOMER LOGIN");
@@ -118,22 +116,17 @@ public class Home extends JFrame implements ActionListener {
         button1.setSize(190, 30);
         button1.setLocation(1440, 145);
         button1.addActionListener(this);
-        button1.setBackground(Color.DARK_GRAY);
-        button1.setForeground(Color.WHITE);
         c.add(button1);
 
         button2= new JButton("ADMIN LOGIN");
         button2.setFont(new Font("Arial", Font.PLAIN, 16));
-        button2.setSize(190, 30);
-        button2.setLocation(1690, 145);
+        button2.setBounds(1150, 500, 190, 30);
         button2.addActionListener(this);
-        button2.setBackground(Color.DARK_GRAY);
-        button2.setForeground(Color.WHITE);
         c.add(button2);
 
 
         pic = new JLabel();
-        pic.setBounds(1080, 590, 850, 450);
+        pic.setBounds(1080, 590, 600, 450);
 
         //Call The Function SetImageSize
         SetImageSize(6);

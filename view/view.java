@@ -8,14 +8,14 @@ import model.Stays2;
 import java.awt.*;
 import java.util.List;
 
-public class View extends JFrame   {
+public class view extends JFrame   {
 
     Object[] columns = { "StaysID","Name","ArrivalDate", "DepartureDate", "TotalnumberofAdults", "DepartureDate" };
     String data[][];
     JTable table;
     DefaultTableModel model;
 
-    public View() {
+    public view() {
 
         fillArray();
 
