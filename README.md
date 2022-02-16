@@ -1,7 +1,7 @@
 # Ghumantey
 TRAVEL MANAGEMENT SYSTEM
 AIM: 
-i. bestow a simple user friendly application to book lodges, packages and covoyence of the end user's comfort.
+i. bestow a simple user friendly application to book lodges and covoyence of the end user's comfort.
 
 
 MEMBERS:
