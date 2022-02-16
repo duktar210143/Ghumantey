@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import controller.StaysController;
 import controller.TouristController;
@@ -15,7 +15,7 @@ public class RegisterStaysTesting {
     StaysController staysController;
     @Before
     public void init(){
-        stays = new Stays(0, null, null, 0, null, 0, 0, null, null, 0);
+        stays = new Stays();
         staysController = new StaysController();
     }
     @Test

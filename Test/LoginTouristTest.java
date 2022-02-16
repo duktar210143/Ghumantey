@@ -1,14 +1,15 @@
-package test;
-
-import java.beans.Transient;
+package Test;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import controller.TouristController;
+import model.Tourist;
 import view.Login;
 
 public class LoginTouristTest {
+    // private static final String UserName = null;
+    // private static final String Password = null;
     Login login;
     TouristController touristController = new TouristController();
     @Test

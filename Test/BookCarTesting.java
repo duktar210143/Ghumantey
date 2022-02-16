@@ -1,10 +1,7 @@
-package test;
+package Test;
 
 import controller.Carcontroller;
-import controller.TouristController;
-import database.Dbconnection;
 import model.Car;
-import model.Tourist;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

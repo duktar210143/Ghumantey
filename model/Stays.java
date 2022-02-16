@@ -13,7 +13,7 @@ public class Stays {
     private String DepartureDate;
     private int roomId;
 
-    public Stays(){
+    public Stays(String string, String string2, String string3, String string4, int i, int j, String string5){
 
     }
     
@@ -40,6 +40,9 @@ public class Stays {
         this.DepartureDate = DepartureDate;
         this.roomId = roomId;
         }
+
+    public Stays() {
+    }
 
     public void setStaysID(int StaysID){
         this.StaysID = StaysID;

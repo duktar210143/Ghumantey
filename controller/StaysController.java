@@ -55,5 +55,6 @@ public class StaysController {
         }
         return lststays;
     }
+    Stays stays = new Stays();
 }
 

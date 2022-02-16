@@ -92,6 +92,12 @@ public class Login {
   }
   //   public static void main(String[] args) {
 
+public void UserName(String string) {
+}
+
+public void Password(String string) {
+}
+
   //     new Login();
   // }
 

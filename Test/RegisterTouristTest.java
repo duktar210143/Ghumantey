@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import controller.TouristController;
 import database.Dbconnection;

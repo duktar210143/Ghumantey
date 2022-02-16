@@ -1,12 +1,10 @@
 package controller;
-
 import java.sql.ResultSet;
-
 import database.Dbconnection;
 import model.Tourist;
+import view.Login;
 
-public class TouristController {
-    
+public class TouristController {  
     Dbconnection db;
 
     public int registerTourist(Tourist tourist){
@@ -48,5 +46,11 @@ public Tourist loginTourist(String UserName, String Password){
     }
     return tourist;
 }
+
+
+public int loginTourist(Login login) {
+    return 0;
+}
+
 }
     
